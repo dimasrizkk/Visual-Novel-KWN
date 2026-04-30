@@ -10,15 +10,43 @@ define e = Character("Eileen")
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    #
+    # SCENE !
+    #
 
-    scene bg room
+    scene black
+    with fade
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    "Tahun 2047"
+    "Nawasena. Kota yang dibangun dari kaca, kabel, dan keyakinan bahwa kemajuan selalu bisa dibeli."
+
+    scene nawasa_city_night
+    with dissolve
+
+    "Gedung menjulang menembus kabut. Jalanan bergerak tanpa sopir. Drone mengantar kebutuhan sebelum orang sadar mereka membutuhkannya."
+    "Di setiap sudut, layar menyala lebih terang dari langit."
+
+    
+    
+    system "Selamat malam, warga sektor 9."
+    system "Kebutuhan Anda telah kami prediksi."
+    system "Diskon sepatu impor 40%%."
+    system "Upgrade hidup dimulai dari pilihan yang tepat."
+    
+    narrator "Iklan tidak lagi mencari manusia."
+    narrator "Ia mengenal mereka lebih dulu."
+    
+    scene street_people
+    with dissolve
+
+    "Seorang pria menatap etalase dan membeli jam tangan yang tak ia perlukan."
+    "Seorang mahasiswa menyembunyikan tas buatan lokalnya sebelum masuk kafe."
+    "Seorang ibu mengambil pinjaman digital untuk membeli citra hidup yang dijanjikan layar."
+    "Semua merasa memilih."
+    "Tak banyak yang sadar mereka sedang dipilihkan."
+
+    stop music fadeout 2.0
+
 
     show eileen happy
 

@@ -1,0 +1,6 @@
+define narrator = Character(None)
+define raka = Character("Raka")
+define nara = Character("Nara")
+define adrian = Character("Adrian")
+define system = Character("SYSTEM", color="#00ffff")
+define worker = Character("Worker")
