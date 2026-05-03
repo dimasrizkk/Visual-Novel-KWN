@@ -2,7 +2,7 @@ label scene9:
     scene transit_gate_locked with fade
     
     # Memutar BGM perjalanan di kota tua
-    play music "audio/old_city_walk.mp3" fadein 2.0
+    play music old_city_walk.mp3 fadein 2.0
     
     "Karena perangkatnya mati, gerbang transit menolak membukakan jalan."
     
@@ -100,4 +100,5 @@ label scene9:
     
     "Ia mulai curiga bahwa di kota ini, masa lalu hanya dihargai jika sudah dibungkam."
 
+    stop music fadeout 3.0
     return

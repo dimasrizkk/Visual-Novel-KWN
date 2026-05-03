@@ -1,6 +1,6 @@
 label scene5:
     # Memutar BGM "Lonely Room" untuk membangun suasana sepi
-    play music "audio/lonely_room.mp3" fadein 2.0
+    play music lonely_room fadein 2.0
 
     scene apartment_dark with fade
     
@@ -21,7 +21,7 @@ label scene5:
     raka "...Masih ada."
     
     # Memutar SFX suara kotak dibuka
-    play sound "audio/box_open.mp3"
+    play sound box_open
     
     scene old_shoes with dissolve
     

@@ -1,8 +1,10 @@
 label scene6:
     scene apartment_dark with dissolve
+
+    play music menegangkan fadein 5.0
     
     # Memutar efek suara notifikasi tugas baru
-    play sound "audio/device_ping.mp3"
+    play sound device_ping
     
     system "Penugasan baru diterima."
     system "PRIORITAS MERAH"
@@ -36,7 +38,7 @@ label scene6:
     system "Menunggu konfirmasi..."
     
     "Raka menatap layar lama."
-    
+    stop music fadeout 4.0
     scene split_screen with dissolve
     
     "Di satu sisi: layar modern yang menawarkan masa depan."
@@ -44,6 +46,8 @@ label scene6:
     "Raka berdiri di antara keduanya."
     
     raka "...Aku terima."
+
+    play sound confirm
     
     system "Penugasan dikonfirmasi."
 

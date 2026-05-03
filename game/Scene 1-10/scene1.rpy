@@ -1,6 +1,6 @@
 label scene1:
 
-    play music citynighthologram fadein 1.0
+    play music citynighthologram fadein 3.0
     scene black
     with fade
 
@@ -32,6 +32,6 @@ label scene1:
     "Semua merasa memilih."
     "Tak banyak yang sadar mereka sedang dipilihkan."
 
-    stop music fadeout 1.0
+    stop music fadeout 2.0
 
     return

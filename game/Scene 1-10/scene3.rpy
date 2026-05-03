@@ -1,6 +1,6 @@
 label scene3:
     # Memutar efek suara pintu terbuka
-    play sound "audio/door_open.mp3"
+    play sound door_open
 
     scene office_hall with dissolve
 
@@ -15,6 +15,8 @@ label scene3:
 
     "Ruangan langsung rapi."
     "Suara langkahnya pelan, tapi cukup untuk membuat orang menahan napas."
+    play sound langkah_kaki
+    pause 4.0
 
     adrian "Lanjutkan pekerjaan kalian."
     adrian "Kota tidak menunggu."

@@ -11,6 +11,10 @@ init offset = -2
 init python:
     gui.init(1920, 1080)
 
+# nambah init untuk sound ambient
+init python:
+    renpy.music.register_channel("ambient", mixer="sfx", loop=True)
+
 ## Enable checks for invalid or unstable properties in screens or transforms
 define config.check_conflicting_properties = True
 

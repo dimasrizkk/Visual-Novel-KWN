@@ -1,6 +1,6 @@
 label scene4:
     # Memutar BGM "Adrian Theme" sesuai instruksi naskah
-    play music "audio/adrian_theme.mp3" fadein 2.0
+    play music adrian_theme fadein 2.0
 
     scene minister_room with fade
     

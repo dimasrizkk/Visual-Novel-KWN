@@ -1,6 +1,6 @@
 label scene8:
     # Memutar BGM kesibukan kota yang mekanis
-    play music "audio/city_hum.mp3" fadein 2.0
+    play music city_hum fadein 2.0
 
     scene mirror_tower_evening with fade
     
@@ -13,13 +13,13 @@ label scene8:
     
     show raka tired at center
     
+    play sound lift_tertutup fadein 1.5
     "Pintu lift menutup."
     "Untuk pertama kalinya hari itu, tak ada yang meminta keputusan darinya."
     
     raka "...Hah."
     
     system "Selamat sore, Raka Pradana."
-    # Menggunakan %% agar simbol persentase tidak error
     system "Tingkat stres Anda meningkat 12%%."
     system "Disarankan membeli paket relaksasi premium."
     
@@ -32,6 +32,7 @@ label scene8:
     "Di kota ini, mesin mengenali detak jantung."
     "Tapi belum belajar privasi."
 
+    play sound langkah_kaki_banyak fadein 2.0
     scene lobby_future with dissolve
     
     "Lobi gedung dipenuhi orang-orang berpakaian rapi yang berjalan cepat dengan wajah kosong."
@@ -66,7 +67,7 @@ label scene8:
     "Ia mulai berjalan."
     
     # SFX Sistem mulai bermasalah
-    play sound "audio/device_glitch.mp3"
+    play sound device_glitch
     
     system "..."
     system "..."
@@ -80,7 +81,7 @@ label scene8:
     raka "Hm?"
     
     # SFX Error utama
-    play sound "audio/device_error.mp3"
+    play sound [device_error_1, device_error_2]
     
     "Perangkat di pergelangan tangannya berkedip merah."
     
@@ -116,7 +117,7 @@ label scene8:
     raka "Tak ada satu pun hubungan."
     
     # SFX Pesan darurat masuk
-    play sound "audio/message_ping.mp3"
+    play sound message_ping
     
     system "Alternatif layanan tersedia."
     system "Pusat perbaikan resmi penuh hingga 3 hari."

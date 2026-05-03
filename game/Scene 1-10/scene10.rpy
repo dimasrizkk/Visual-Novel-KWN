@@ -1,10 +1,11 @@
 label scene10:
     # Memutar SFX kerumunan dari kejauhan dan BGM upacara
-    play sound "audio/crowd_far.mp3" loop
+    play ambient crowd_far.mp3 fadein 1.0 volume 0.5
+    #play sound crowd_cheer fadein 2.0 volume 0.5
     
     scene distribution_square with fade
     
-    play music "audio/public_ceremony.mp3" fadein 2.0
+    play music public_ceremony fadein 2.0
     
     "Keramaian terdengar dari alun-alun distribusi."
     "Ratusan warga berkumpul di depan panggung digital."
@@ -25,7 +26,7 @@ label scene10:
     adrian "Hari ini, kebutuhan kalian sampai sebelum kalian memintanya."
     
     # SFX Tepuk tangan
-    play sound "audio/applause.mp3"
+    play sound applause volume 0.5
     "..."
     
     adrian "Dulu, kualitas ditentukan siapa kenal siapa."
@@ -43,7 +44,7 @@ label scene10:
     adrian "Identitas yang membiarkan anak-anak mewarisi kegagalan?"
     adrian "Jika masa lalu tak mampu memberi makan kalian, mengapa kalian menyembahnya?"
     
-    play sound "audio/crowd_cheer.mp3"
+    play sound crowd_cheer
     "Kerumunan bersorak."
     
     "Raka ikut diam."
@@ -62,7 +63,7 @@ label scene10:
     adrian "Sebagian dari kalian menyebut ini kontrol."
     adrian "Aku menyebutnya tanggung jawab."
     
-    play sound "audio/applause_loud.mp3"
+    play sound applause_loud
     "Tepuk tangan membesar."
 
     scene raka_crowd with dissolve
@@ -87,7 +88,7 @@ label scene10:
     adrian "Kemajuan selalu menuntut sesuatu untuk ditinggalkan."
     adrian "Pastikan yang kalian tinggalkan hanyalah beban."
     
-    play sound "audio/crowd_cheer.mp3"
+    play sound crowd_cheer
     "Sorak-sorai kembali pecah."
     
     "Raka melihat wajah-wajah di sekelilingnya."
@@ -96,7 +97,7 @@ label scene10:
     "Sebagian karena lelah berharap pada hal lain."
     
     # Suara pidato dan kerumunan diinterupsi oleh perangkat Raka
-    play sound "audio/device_glitch_soft.mp3"
+    play sound device_glitch_soft
     
     "Perangkat rusaknya kembali berkedip."
     

@@ -1,6 +1,6 @@
 label scene2:
     # Memutar BGM atau SFX suasana kantor
-    play music "office_ambience.ogg" fadein 1.0
+    play music office_ambience fadein 1.0
 
     scene mirror_office_day with fade
 
@@ -56,5 +56,7 @@ label scene2:
 
     "Semua tertawa."
     "Raka tidak."
+    
+    stop music fadeout 2.0
 
     return
