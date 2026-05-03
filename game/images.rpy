@@ -1,17 +1,51 @@
-#background
-image alley = im.Scale("assets/background/alley.png", 1920, 1080)
-image community_hub = im.Scale("assets/background/community_hub.png", 1920, 1080)
-image community_hub2 = im.Scale("assets/background/community_hub2.png", 1920, 1080)
-image interogation_room = im.Scale("assets/background/interogation_room.png", 1920, 1080)
+# 1. APARTEMEN RAKA.jpg
+image apartment_dark = im.Scale("assets/background/APARTEMEN RAKA.jpg", 1920, 1080)
+image raka_apartment = im.Scale("assets/background/APARTEMEN RAKA.jpg", 1920, 1080)
+
+# 2. community_hub.png
+image street_people = im.Scale("assets/background/community_hub.png", 1920, 1080)
+
+# 3. community_hub2.png
+image lobby_future = im.Scale("assets/background/community_hub2.png", 1920, 1080)
+
+# 4. GANG TUA MALAM.jpg
+image alley_dark = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
+image ruang_sisa_outside = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
+
+# 5. GANG TUA PAGI.png
+image city_walk_bridge = im.Scale("assets/background/GANG TUA PAGI.png", 1920, 1080)
+
+# 6. interogation_room.png
+image adrian_prison = im.Scale("assets/background/interogation_room.png", 1920, 1080)
+
+# 7. JARINGAN BAWAH TANAH 1.jpg
+image ruang_sisa_inside = im.Scale("assets/background/JARINGAN BAWAH TANAH 1.jpg", 1920, 1080)
+image ruang_sisa_inside_chaos = im.Scale("assets/background/JARINGAN BAWAH TANAH 1.jpg", 1920, 1080)
+
+# 8. JARINGAN BAWAH TANAH 2.jpg
+image underground_hub = im.Scale("assets/background/JARINGAN BAWAH TANAH 2.jpg", 1920, 1080)
+
+# 9. KANTOR ELITE_RUANG ADRIAN.jpg
+image adrian_office_wide = im.Scale("assets/background/KANTOR ELITE_RUANG ADRIAN.jpg", 1920, 1080)
+
+# 10. KANTOR MIRROR (PUSAT OPERASI).jpg
+image mirror_office_day = im.Scale("assets/background/KANTOR MIRROR (PUSAT OPERASI).jpg", 1920, 1080)
+image office_hall = im.Scale("assets/background/KANTOR MIRROR (PUSAT OPERASI).jpg", 1920, 1080)
+
+# 11. KOTA NAWASENA.jpg
+image city_night_hologram = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
+image street_modern = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
+
+# 12. KOTA SAAT CHAOS.jpg
+image city_chaos = im.Scale("assets/background/KOTA SAAT CHAOS.jpg", 1920, 1080)
+image chaos_city = im.Scale("assets/background/KOTA SAAT CHAOS.jpg", 1920, 1080)
+
+# 13. minister_room_(adrian).png
 image minister_room = im.Scale("assets/background/minister_room_(adrian).png", 1920, 1080)
-image mirror_office = im.Scale("assets/background/mirror_office.png", 1920, 1080)
-image nawasa_city_night = im.Scale("assets/background/nawasa_city_night.png", 1920, 1080)
-image nawasena_bad_ending = im.Scale("assets/background/nawasena_bad_ending.png", 1920, 1080)
-image raka_apartement = im.Scale("assets/background/raka_apartement.png", 1920, 1080)
-image rebuild = im.Scale("assets/background/rebuild.png", 1920, 1080)
-image rebuild2 = im.Scale("assets/background/rebuild2.png", 1920, 1080)
-image ruang_sisa = im.Scale("assets/background/ruang_sisa.png", 1920, 1080)
-image the_core = im.Scale("assets/background/the_core.png", 1920, 1080)
+
+# 14. MIRROR PUSAT KENDALI.jpg
+image core_main = im.Scale("assets/background/MIRROR PUSAT KENDALI.jpg", 1920, 1080)
+image ministry_control_room = im.Scale("assets/background/MIRROR PUSAT KENDALI.jpg", 1920, 1080)
 
 
 #adrian jas
