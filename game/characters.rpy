@@ -1,6 +1,36 @@
-define narrator = Character(None)
-define raka = Character("Raka")
-define nara = Character("Nara")
-define adrian = Character("Adrian")
-define system = Character("SYSTEM", color="#00ffff")
-define worker = Character("Worker")
+## ============================================================
+##  MIRROR — Visual Novel
+##  File    : characters.rpy
+##  Isi     : Semua definisi karakter & variabel flag global
+##  Catatan : File ini dibaca otomatis oleh Ren'Py saat startup
+## ============================================================
+
+## ── NARRATOR ─────────────────────────────────────────────────
+## Narrator cukup pakai tanda kutip biasa: "teks narasi"
+## Tidak perlu define khusus — Ren'Py sudah handle otomatis.
+
+## ── CHARACTER DEFINITIONS ────────────────────────────────────
+
+define raka          = Character("Raka",             color="#a8d8ea")
+define nara          = Character("Nara",             color="#f7c59f")
+define adrian        = Character("Adrian",           color="#c8a2c8")
+
+define system        = Character("[ SISTEM ]",       color="#00e5ff", what_color="#00e5ff")
+
+define pengrajin1    = Character("Pengrajin",        color="#c8b89a")
+define penjahit      = Character("Penjahit",         color="#c8b89a")
+define pengrajin_tua = Character("Pak Jaya",         color="#d4b896")
+define anak          = Character("Anak Kecil",       color="#ffe4b5")
+
+define adrian_voice  = Character("[ Suara Adrian ]", color="#c8a2c8", what_italic=True)
+define nara_voice    = Character("[ Suara Nara ]",   color="#f7c59f", what_italic=True)
+
+## ── FLAG VARIABLES ───────────────────────────────────────────
+
+default loyalty   = 0
+default awareness = 0
+default ambition  = 0
+default rebellion = 0
+default doubt     = 0
+default betrayal  = 0
+default ruthless  = 0
