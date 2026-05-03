@@ -3,21 +3,13 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-from unittest.mock import call
-
-from game import scene1, scene2
-
 
 define e = Character("Eileen")
 
 # Deklarasi Karakter
 
 
-# Inisialisasi Variabel Poin (Sangat penting agar tidak error saat ditambah)
-default ambition = 0
-default ruthless = 0
-default loyalty = 0
-default trust_nara = 0 #variabel scene 16
+
 
 
 # The game starts here.

@@ -42,10 +42,17 @@ define nara = Character("Nara") #deklarasi utk scene 11
 define penyiar = Character("Penyiar Radio", what_italic=True) #deklarasi utk scene 12
 define analyst = Character("Senior Analyst") #deklarasi utk scene 17
 
-default loyalty   = 0
-default awareness = 0
-default ambition  = 0
+#default loyalty   = 0
+#default awareness = 0
+#default ambition  = 0
 default rebellion = 0
 default doubt     = 0
 default betrayal  = 0
-default ruthless  = 0
+#default ruthless  = 0
+
+# Inisialisasi Variabel Poin (Sangat penting agar tidak error saat ditambah)
+default ambition = 0
+default ruthless = 0
+default loyalty = 0
+default awareness = 0  
+default trust_nara = 0 #variabel scene 16
