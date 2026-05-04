@@ -22,7 +22,7 @@ label scene12:
             scene radio_close with dissolve
             
             # SFX Suara frekuensi radio tua yang mendengung/statis
-            play sound "audio/radio_static.mp3"
+            play sound radio_static
             
             "Suara penyiar tua memecah dengung statis."
             penyiar "..dan pasar pagi dibuka pukul enam...."

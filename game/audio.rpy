@@ -9,8 +9,8 @@ define audio.city_hum           = "assets/audio/scene 1-10/Scene 8 - city hum.mp
 define audio.old_city_walk      = "assets/audio/scene 1-10/Scene 9 - old city walk.mp3"
 define audio.public_ceremony    = "assets/audio/scene 1-10/Scene 10 - Public_ceremony.mp3"
 
-define audio.quiet_alley        = "assets/audio/scene 1-10/quiet_alley.mp3"
-define audio.workshop_warm      = "assets/audio/scene 1-10/workshop_warm.mp3"
+define audio.quiet_alley        = "assets/audio/scene 11-20/flashback/warmambience.mp3"
+define audio.workshop_warm      = "assets/audio/scene 11-20/scene 11/workshopambience.mp3"
 define audio.debate_low         = "assets/audio/scene 1-10/debate_low.mp3"
 define audio.soft_truth         = "assets/audio/scene 1-10/soft_truth.mp3"
 define audio.cold_data          = "assets/audio/scene 1-10/cold_data.mp3"
@@ -43,9 +43,9 @@ define audio.child_laugh_echo   = "assets/audio/scene 1-10/child_laugh_echo.mp3"
 
 define audio.applause_loud      = "assets/audio/scene 1-10/applause_loud.mp3"
 
-define audio.metal_tap          = "assets/audio/scene 1-10/metal_tap.mp3"
-define audio.door_bell_old      = "assets/audio/scene 1-10/door_bell_old.mp3"
-define audio.radio_static       = "assets/audio/scene 1-10/radio_static.mp3"
+define audio.metal_tap          = "assets/audio/scene 11-20/scene 11/metaltools.mp3"
+define audio.door_bell_old      = "assets/audio/scene 11-20/scene 11/slidingdoor.mp3"
+define audio.radio_static       = "assets/audio/scene 11-20/scene 12/radiostatic_optional.mp3"
 define audio.screwdriver_turn   = "assets/audio/scene 1-10/screwdriver_turn.mp3"
 define audio.lamp_place_table   = "assets/audio/scene 1-10/lamp_place_table.mp3"
 define audio.device_reboot      = "assets/audio/scene 1-10/device_reboot.mp3"

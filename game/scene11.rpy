@@ -2,7 +2,7 @@ label scene11:
     scene alley_dark with fade
     
     # Memutar BGM gang sunyi
-    play music "audio/quiet_alley.mp3" fadein 2.0
+    play music quiet_alley fadein 2.0
     
     "Gang itu lebih sempit dari yang terlihat dari luar."
     "Dinding-dinding lembap dipenuhi pipa tua dan kabel yang tak lagi terhubung ke pusat kota."
@@ -12,7 +12,7 @@ label scene11:
     "Hanya langkah kaki dan bunyi logam dipukul perlahan dari kejauhan."
     
     # SFX ketukan logam dari kejauhan
-    play sound "audio/metal_tap.mp3"
+    play sound metal_tap
 
     scene ruang_sisa_outside with dissolve
     
@@ -29,7 +29,7 @@ label scene11:
     raka "Seperti seluruh masa lalu."
     
     # SFX bel pintu toko tua berbunyi
-    play sound "audio/door_bell_old.mp3"
+    play sound door_bell_old
     
     # Menghentikan BGM gang sunyi sebelum masuk ke dalam
     stop music fadeout 1.5
@@ -37,7 +37,7 @@ label scene11:
     scene ruang_sisa_inside with fade
     
     # BGM berubah menjadi hangat saat masuk ke bengkel
-    play music "audio/workshop_warm.mp3" fadein 2.0
+    play music workshop_warm fadein 2.0
     
     "Udara di dalam berbeda."
     "Hangat."
