@@ -2,16 +2,20 @@ label scene8:
     # Memutar BGM kesibukan kota yang mekanis
     play music city_hum fadein 2.0
 
-    scene mirror_tower_evening with fade
+    scene mirror_tower_evening with fade #blom ada bg
     
     "Sore turun perlahan di Nawasena."
     "Di ketinggian, cahaya matahari terakhir memantul pada dinding-dinding kaca, membuat seluruh kota tampak seperti istana yang dibangun dari cermin."
     "Dari jauh, semuanya terlihat sempurna."
     "Dari dekat, semuanya bekerja terlalu keras agar terlihat sempurna."
 
-    scene elevator_inside with dissolve
+    scene elevator_inside with dissolve #blom ada bg jg
     
-    show raka tired at center
+    show raka formal sedih: #blum ada tired karakternya
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
     
     play sound lift_tertutup fadein 1.5
     "Pintu lift menutup."
@@ -52,7 +56,7 @@ label scene8:
     "Udara kota menyambutnya dengan aroma logam basah dan parfum sintetis dari billboard jalanan."
     
     # Memunculkan gambar iklan hologram
-    show hologram_ads with dissolve
+    show hologram_ads with dissolve #blom bikin overlay buat hologram ini
     
     system "Raka, berdasarkan pola langkahmu, kau tampak letih."
     system "Kopi spesial tersedia 40 meter di depan."
@@ -61,6 +65,14 @@ label scene8:
     raka "Tidak."
     
     system "Penolakan tercatat."
+
+    hide hologram_ads
+
+    show raka formal marah: 
+        xalign 0.5
+        yalign 1.1
+        zoom 0.43
+    with dissolve
     
     raka "Aku bicara sendiri sekarang."
     
@@ -77,7 +89,13 @@ label scene8:
     hide hologram_ads with dissolve
     
     "Langkah Raka terhenti."
-    
+
+    show raka formal terkejut:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
+
     raka "Hm?"
     
     # SFX Error utama
@@ -99,7 +117,13 @@ label scene8:
     
     "Mencoba membuka pintu stasiun."
     system "Akses ditolak."
-    
+
+    show raka formal marah: 
+        xalign 0.5
+        yalign 1.1
+        zoom 0.43
+    with dissolve
+
     raka "Serius?"
     
     "Untuk sesaat, seorang pria dengan gaji tinggi dan akses luas berubah menjadi seseorang yang tak bisa membeli air."
@@ -125,7 +149,13 @@ label scene8:
     
     "Sebuah alamat muncul."
     "Zona Tua. Sektor Pinggiran."
-    
+
+    show raka formal netral:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
+
     raka "Masih ada tempat seperti itu?"
     
     system "Catatan: area tidak direkomendasikan."
