@@ -4,6 +4,7 @@ image raka_apartment = im.Scale("assets/background/APARTEMEN RAKA.jpg", 1920, 10
 
 # 2. community_hub.png
 image street_people = im.Scale("assets/background/community_hub.png", 1920, 1080)
+image old_market_corner = im.Scale("assets/background/community_hub.png", 1920, 1080)
 
 # 3. community_hub2.png
 image lobby_future = im.Scale("assets/background/community_hub2.png", 1920, 1080)
@@ -11,6 +12,8 @@ image lobby_future = im.Scale("assets/background/community_hub2.png", 1920, 1080
 # 4. GANG TUA MALAM.jpg
 image alley_dark = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
 image ruang_sisa_outside = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
+image city_night_rain = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
+image alley_entrance_far = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
 
 # 5. GANG TUA PAGI.png
 image city_walk_bridge = im.Scale("assets/background/GANG TUA PAGI.png", 1920, 1080)
@@ -35,6 +38,7 @@ image office_hall = im.Scale("assets/background/KANTOR MIRROR (PUSAT OPERASI).jp
 # 11. KOTA NAWASENA.jpg
 image city_night_hologram = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
 image street_modern = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
+image roadside_people = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
 
 # 12. KOTA SAAT CHAOS.jpg
 image city_chaos = im.Scale("assets/background/KOTA SAAT CHAOS.jpg", 1920, 1080)
