@@ -123,7 +123,8 @@ init python:
 style window is default
 style say_label is default
 style say_dialogue is default
-style say_thought is say_dialogue
+style say_thought is say_dialogue:
+    italic True
 
 style namebox is default
 style namebox_label is say_label
