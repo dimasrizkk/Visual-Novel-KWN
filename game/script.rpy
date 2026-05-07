@@ -27,15 +27,4 @@ label start:
     call scene16
     call scene17
 
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "tes tes tis tes"
-
-    e "jakang sf terbagus"
-
-    # This ends the game.
-
     return
