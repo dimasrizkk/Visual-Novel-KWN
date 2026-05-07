@@ -16,7 +16,12 @@ label scene7:
     
     "Di dalam, seseorang sedang memperbaiki benda yang kota anggap selesai."
     
-    show nara silhouette at center with dissolve
+    show nara bengkel serius:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+        matrixcolor TintMatrix("#000")
+    with dissolve
     
     "Dan tanpa mengetahui namanya, masa depan Raka sedang menunggu."
     
