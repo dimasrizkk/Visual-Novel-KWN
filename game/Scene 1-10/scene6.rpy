@@ -12,7 +12,11 @@ label scene6:
     system "Tujuan: menurunkan kepercayaan warga pada produk lokal sebesar 72%%"
     system "Kurator utama: Raka Pradana"
     
-    show raka shocked at center
+    show raka casual terkejut:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.4
+    with dissolve
     
     raka "...Final?"
     
@@ -39,7 +43,7 @@ label scene6:
     
     "Raka menatap layar lama."
     stop music fadeout 4.0
-    scene split_screen with dissolve
+    scene split_screen with dissolve #blom ada bg nya
     
     "Di satu sisi: layar modern yang menawarkan masa depan."
     "Di sisi lain: sepatu tua yang menolak dilupakan."
