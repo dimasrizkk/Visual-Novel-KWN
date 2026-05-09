@@ -10,12 +10,15 @@ define worker = Character("Worker", color="#95a5a6")
 define worker1 = Character("Worker 1", color="#95a5a6")
 define worker2 = Character("Worker 2", color="#95a5a6")
 define worker3 = Character("Worker 3", color="#95a5a6")
+define official_shadow = Character("Official Shadow", color="#636e72")
 
 # --- WARGA ZONA TUA ---
 define penjaga = Character("Penjaga", color="#5dade2")
 define old_woman = Character("Nenek Tua", color="#d4ac0d")
 define ibu = Character("Ibu", color="#ec7063")
 define anak = Character("Anak Kecil", color="#f1948a")
+define pak_jaya = Character("Pak Jaya", color="#e67e22")
+define pengrajin_bawah = Character("Pengrajin Bawah", color="#d35400")
 
 # --- SUARA LATAR & MASSA ---
 define kerumunan = Character("Kerumunan", color="#aab7b8")
