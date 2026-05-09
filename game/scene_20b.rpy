@@ -9,7 +9,7 @@ label scene_20b:
 
     scene APARTEMEN RAKA with dissolve
 
-    # SFX Ketukan pintu yang memecah kesunyian
+    # SFX Ketukan pintu yang memecah kesunyian malam
     play sound "door_knock_slow.ogg"
 
     "Ketukan."
@@ -45,7 +45,7 @@ label scene_20b:
 
     nara "Gue masuk."
 
-    # Mengatur posisi keduanya saat Nara sudah berada di dalam
+    # Mengatur posisi keduanya saat Nara sudah berada di dalam ruangan
     show Casual_Terkejut:
         xalign 0.15
         yalign 1.1
