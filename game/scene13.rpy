@@ -1,5 +1,14 @@
 label scene13:
-    scene workbench_tension with dissolve
+    scene workbench_tension with dissolve #bg blum ada
+    show raka formal netral: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+
+    show nara bengkel serius:
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85
     
     # Memutar BGM debat yang tegang namun bertempo rendah
     play music debate_low fadein 2.0 volume 0.5
@@ -8,6 +17,11 @@ label scene13:
     play sound screwdriver_turn
     
     "Nara memasang obeng, lalu bicara tanpa melihatnya."
+
+    show nara bengkel netral:
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85
     
     nara "Kau kerja di pusat kota."
     raka "Keliatannya?"
@@ -54,7 +68,12 @@ label scene13:
     raka "Lalu?"
     
     nara "Negara mengambil desainnya."
-    
+
+    show raka formal terkejut: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+
     raka "Diambil?"
     
     nara "\"Dipinjam permanen\"."
@@ -68,9 +87,25 @@ label scene13:
     "Ruang itu mendadak lebih sempit."
     
     raka "Maaf."
+
+    show nara bengkel marah:
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85
+
     nara "Jangan."
     nara "Kata itu tak ada arti kalau tidak mengubah apa pun."
-    
+
+    show raka formal netral: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+
+    show nara bengkel netral:
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85
+
     raka "Kau selalu bicara seperti menuduh?"
     nara "Kau selalu bicara seperti membela sesuatu yang belum tentu layak dibela?"
     
