@@ -1,62 +1,84 @@
 ## ============================================================
-##  MIRROR — Scene 19E
+##  MIRROR — Scene 19E (Updated Format)
 ##  Judul   : Penutup Pertemuan
 ##  Karakter: Raka, Adrian
-##  Latar   : minister_room → nawasa_city_night → black
+##  Latar   : minister_room_(adrian) → KOTA NAWASENA → black
 ## ============================================================
 
 label scene_19e:
 
-    scene minister_room
-    with dissolve
+    scene minister_room_(adrian) with dissolve
 
-    show raka formal serius at left
-    show adrian jas netral at right
+    show Formal_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    
+    show Jas_Netral:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
     "Adrian kembali menghadap kota."
 
-    show adrian jas serius at right
+    show Jas_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     adrian "Kau boleh pergi."
     adrian "Dan Raka..."
 
-    show raka formal serius at left
+    show Formal_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
-    "Raka berhenti di pintu."
+    "Raka berhenti di ambang pintu."
 
-    show adrian jas serius at right
+    show Jas_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     adrian "Hati-hati dengan orang-orang yang membuatmu merasa bebas."
     adrian "Mereka biasanya yang pertama membuatmu kehilangan segalanya."
 
-    "Nama Nara tidak disebut."
-    "Namun terasa jelas."
+    "Nama Nara tidak disebut, namun kehadirannya terasa jelas di antara kata-kata itu."
 
-    hide adrian
+    hide Jas_Serius with dissolve
 
-    show raka formal sedih at center
+    show Formal_Sedih:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
-    "Raka keluar."
+    "Raka melangkah keluar."
 
-    scene nawasa_city_night
-    with fade
+    scene KOTA NAWASENA with fade
 
-    play music "descending_tension.ogg"
+    # Mengganti BGM ke tema yang lebih melankolis dan penuh beban
+    play music "descending_tension.ogg" fadein 3.0
 
-    show raka formal sedih at center
+    show Formal_Sedih:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
-    "Lift turun perlahan."
-    "Di tangannya, keputusan tadi masih terasa."
-    "Di kepalanya, suara Nara dan Adrian mulai bertabrakan."
-    "Di dadanya, sesuatu yang dulu stabil mulai retak."
-    "Dan untuk pertama kalinya..."
-    "Raka sadar.."
-    "ia tidak lagi berdiri di dalam sistem."
-    "Ia berdiri di antara dua dunia."
+    "Lift turun perlahan menembus gemerlap Nawasena."
+    "Di tangannya, keputusan tadi masih terasa berat. Di kepalanya, suara Nara dan Adrian mulai bertabrakan."
+    "Di dadanya, sesuatu yang dulu stabil kini mulai retak."
+    
+    "Dan untuk pertama kalinya, Raka sadar..."
+    "Ia tidak lagi berdiri di dalam sistem. Ia berdiri di antara dua dunia."
 
-    hide raka
+    hide Formal_Sedih with dissolve
 
-    scene black
-    with fade
+    # Transisi ke layar hitam sebagai penanda akhir scene
+    scene black with fade
+    stop music fadeout 2.5
 
     jump scene_20a
