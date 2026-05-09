@@ -2,16 +2,16 @@ label scene8:
     # Memutar BGM kesibukan kota yang mekanis
     play music city_hum fadein 2.0
 
-    scene mirror_tower_evening with fade #blom ada bg
+    scene mirror_tower_evening with fade
     
     "Sore turun perlahan di Nawasena."
     "Di ketinggian, cahaya matahari terakhir memantul pada dinding-dinding kaca, membuat seluruh kota tampak seperti istana yang dibangun dari cermin."
     "Dari jauh, semuanya terlihat sempurna."
     "Dari dekat, semuanya bekerja terlalu keras agar terlihat sempurna."
 
-    scene elevator_inside with dissolve #blom ada bg jg
+    scene elevator_inside with dissolve
     
-    show raka formal sedih: #blum ada tired karakternya
+    show raka formal tired:
         xalign 0.5
         yalign 1.1
         zoom 0.85
@@ -65,8 +65,6 @@ label scene8:
     raka "Tidak."
     
     system "Penolakan tercatat."
-
-    hide hologram_ads
 
     show raka formal marah: 
         xalign 0.5
