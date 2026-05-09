@@ -3,7 +3,7 @@ label scene10:
     play ambient "crowd_far.mp3" fadein 1.0 volume 0.5
     #play sound crowd_cheer fadein 2.0 volume 0.5
     
-    scene distribution_square with fade #blom ada
+    scene distribution_square with fade
     
     play music public_ceremony fadein 2.0
     
@@ -19,6 +19,7 @@ label scene10:
     show adrian jas senyum:
         xalign 0.5
         yalign 1.1
+        zoom 0.9
     with dissolve   
 
     kerumunan "Hidup Menteri Adrian!"
@@ -86,12 +87,13 @@ label scene10:
     "Ibunya tak menjawab."
     "Tak ada menu pilihan untuk pertanyaan seperti itu."
 
-    scene adrian_stage_close with dissolve #blom ada bg
+    scene adrian_stage_close with dissolve
 
     scene adrian_stage_close with dissolve
     show adrian jas senyum:
         xalign 0.5
         yalign 1.1
+        zoom 0.9
     with dissolve
     
     adrian "Kemajuan selalu menuntut sesuatu untuk ditinggalkan."
