@@ -35,8 +35,6 @@ label scene3:
     with dissolve
     adrian "Raka Pradana."
 
-    show raka neutral at left
-
     show raka formal netral:
         xalign 0.0
         yalign 1.6
