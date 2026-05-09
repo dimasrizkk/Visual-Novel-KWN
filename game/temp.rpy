@@ -5,7 +5,7 @@ define adrian = Character("Adrian", color="#bdc3c7")
 define system = Character("System", color="#ff00ff")
 
 # --- KORPORAT / PEKERJA ---
-define analyst = Character("Senior Analyst", color="#7fb3d5")
+define senior_analyst = Character("Senior Analyst", color="#7fb3d5")
 define worker = Character("Worker", color="#95a5a6")
 define worker1 = Character("Worker 1", color="#95a5a6")
 define worker2 = Character("Worker 2", color="#95a5a6")
