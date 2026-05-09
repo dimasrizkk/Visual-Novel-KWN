@@ -2,7 +2,7 @@ label scene17:
     scene mirror_office_morning with fade
     
     # Memutar BGM bernuansa dingin dan analitis
-    play music "audio/cold_data.mp3" fadein 2.0
+    play music cold_data fadein 2.0 #pake 424631__hobotrails__realizing-the-realization.mp3
     
     "Pagi di Divisi MIRROR selalu datang tanpa matahari."
     "Lampu putih menyala lebih dulu daripada langit."
@@ -57,7 +57,7 @@ label scene17:
     "Atau disembunyikan cukup rapi."
     
     # SFX Suara ketikan keyboard
-    play sound "audio/keyboard_click.mp3"
+    play sound keyboard_click
     
     "Raka membuka tab yang jarang disentuh pegawai lain."
     
@@ -144,7 +144,7 @@ label scene17:
     scene raka_desk_back with dissolve
     
     # SFX Notifikasi masuk yang mengejutkan
-    play sound "audio/message_ping.mp3"
+    play sound message_ping
     
     system "Undangan rapat evaluasi pukul 20.00."
     system "Pengirim: Kantor Menteri."

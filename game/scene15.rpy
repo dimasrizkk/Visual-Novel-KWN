@@ -1,6 +1,6 @@
 label scene15:
     # SFX suara perangkat elektronik melakukan reboot/restart
-    play sound "audio/device_reboot.mp3"
+    play sound device_reboot
     
     nara "Selesai."
     

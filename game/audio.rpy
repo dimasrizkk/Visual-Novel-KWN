@@ -11,14 +11,14 @@ define audio.public_ceremony    = "assets/audio/scene 1-10/Scene 10 - Public_cer
 
 define audio.quiet_alley        = "assets/audio/scene 11-20/flashback/warmambience.mp3"
 define audio.workshop_warm      = "assets/audio/scene 11-20/scene 11/workshopambience.mp3"
-define audio.debate_low         = "assets/audio/scene 1-10/debate_low.mp3"
-define audio.soft_truth         = "assets/audio/scene 1-10/soft_truth.mp3"
-define audio.cold_data          = "assets/audio/scene 1-10/cold_data.mp3"
+define audio.debate_low         = "assets/audio/scene 11-20/scene 13/tensionbg.mp3"
+define audio.soft_truth         = "assets/audio/scene 11-20/scene 14/759641__migfus20__emotional-piano.mp3"
+define audio.cold_data          = "assets/audio/scene 11-20/scene 17/424631__hobotrails__realizing-the-realization.mp3"
 
 # --- AMBIENT SOUNDS (LOOP) ---
 define audio.rain               = "assets/audio/scene 1-10/Scene 7 - rain.mp3"
 define audio.crowd_far          = "assets/audio/scene 1-10/Scene 10 - kerumunan bersorak.mp3"
-define audio.city_noise_loud    = "assets/audio/scene 1-10/city_noise_loud.mp3"
+define audio.city_noise_loud    = "assets/audio/scene 11-20/scene 16/772138__sam-mortley__feet-alley-way.mp3" #ga dipake
 
 # --- SOUND EFFECTS (SFX) ---
 define audio.door_open          = "assets/audio/scene 1-10/Scene 3 - Door opening.mp3"
@@ -39,14 +39,11 @@ define audio.device_glitch_soft = "assets/audio/scene 1-10/Scene 10 - glitch sof
 define audio.crowd_cheer        = "assets/audio/scene 1-10/Scene 10 - kerumunan bersorak.mp3"
 define audio.applause           = "assets/audio/scene 1-10/Scene 10 - tepuk tangan.mp3"
 define audio.child_laugh_echo   = "assets/audio/scene 1-10/child_laugh_echo.mp3"
-
-
 define audio.applause_loud      = "assets/audio/scene 1-10/applause_loud.mp3"
-
 define audio.metal_tap          = "assets/audio/scene 11-20/scene 11/metaltools.mp3"
 define audio.door_bell_old      = "assets/audio/scene 11-20/scene 11/slidingdoor.mp3"
 define audio.radio_static       = "assets/audio/scene 11-20/scene 12/radiostatic_optional.mp3"
-define audio.screwdriver_turn   = "assets/audio/scene 1-10/screwdriver_turn.mp3"
-define audio.lamp_place_table   = "assets/audio/scene 1-10/lamp_place_table.mp3"
-define audio.device_reboot      = "assets/audio/scene 1-10/device_reboot.mp3"
-define audio.keyboard_click     = "assets/audio/scene 1-10/keyboard_click.mp3"
+define audio.screwdriver_turn   = "<from 0 to 5.0>assets/audio/scene 11-20/scene 13/workshopambience.mp3"
+define audio.lamp_place_table   = "<from 0 to 5.0>assets/audio/scene 11-20/scene 12/554737__dynamique__moving-small-box.mp3"
+define audio.device_reboot      = "assets/audio/scene 11-20/scene 15/232927__bmusic92__mac-start-up.mp3"
+define audio.keyboard_click     = "<from 0 to 10.0>assets/audio/scene 11-20/scene 17/211601__littlecloudcinema__small-keyboard-clicks (1).mp3"

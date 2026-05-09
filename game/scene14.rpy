@@ -3,7 +3,7 @@ label scene14:
     
     # Mematikan BGM perdebatan dengan cepat dan menggantinya dengan lagu yang lebih intim
     stop music fadeout 1.0
-    play music "audio/soft_truth.mp3" fadein 2.0
+    play music soft_truth fadein 2.0
     
     nara "Namamu siapa?"
     

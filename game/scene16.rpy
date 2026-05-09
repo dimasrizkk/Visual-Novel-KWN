@@ -2,13 +2,13 @@ label scene16:
     scene alley_exit_night with fade
     
     # Memutar ambient suara kota yang bising
-    play ambient "audio/city_noise_loud.mp3" fadein 2.0
+    play music city_hum fadein 2.0 #city_noise_loud gaada jadi pake city_hum
     
     "Raka keluar ke gang."
     "Suara kota kembali terdengar."
     "Namun terasa lebih berisik dari sebelumnya."
     
-    play sound "audio/device_ping.mp3"
+    play sound device_ping
     system "Rute tercepat ke rumah telah disiapkan."
     
     "Raka tidak bergerak."
@@ -31,7 +31,7 @@ label scene16:
         # Transisi audio kembali ke dalam ruangan
         stop ambient fadeout 1.5
         scene ruang_sisa_inside with dissolve
-        play music "audio/workshop_warm.mp3" fadein 2.0
+        play music workshop_warm fadein 2.0
         
         "Ia kembali masuk."
         

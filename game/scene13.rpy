@@ -2,7 +2,7 @@ label scene13:
     scene workbench_tension with dissolve
     
     # Memutar BGM debat yang tegang namun bertempo rendah
-    play music debate_low fadein 2.0
+    play music debate_low fadein 2.0 volume 0.5
     
     # SFX suara memasang obeng
     play sound screwdriver_turn
@@ -91,7 +91,7 @@ label scene13:
     "Nara berjalan ke rak, mengambil lampu meja tua."
     
     # SFX suara meletakkan barang usang berbahan logam/kayu ke atas meja
-    play sound lamp_place_table
+    play sound lamp_place_table #blm ada soundnya, jadi pake 554737__dynamique__moving-small-box
     
     nara "Lihat ini."
     nara "Dulu dibuat di blok selatan. Pabrik keluarga."
