@@ -19,7 +19,7 @@ label scene9:
     with dissolve
 
     show penjaga:
-        xalign 0.9
+        xalign 0.95
         yalign 1.6
         zoom 0.85
     with dissolve
@@ -31,7 +31,7 @@ label scene9:
     show raka formal marah: 
         xalign 0.0
         yalign 1.6
-        zoom 0.43
+        zoom 0.38
     with dissolve
 
     raka "Aku pegawai Divisi MIRROR."
@@ -88,7 +88,11 @@ label scene9:
 
     show old_woman at right
 
-    old_woman "Bertahan dari apa?"
+    show old_woman:
+        xalign 0.9
+        yalign 1.6
+        zoom 0.85
+    with dissolve
 
     scene old_market_corner with dissolve 
 
@@ -144,7 +148,7 @@ label scene9:
     raka "Mereka mengubah pabrik jadi pemandangan."
     "Kota ini pandai menjual luka sebagai desain."
 
-    scene mural_wall with dissolve #blom ada bg nya
+    scene mural_walls with dissolve #blom ada bg nya
 
     show raka formal netral:
         xalign 0.0
