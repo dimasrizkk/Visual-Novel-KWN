@@ -51,6 +51,20 @@ image minister_room = im.Scale("assets/background/minister_room_(adrian).png", 1
 image core_main = im.Scale("assets/background/MIRROR PUSAT KENDALI.jpg", 1920, 1080)
 image ministry_control_room = im.Scale("assets/background/MIRROR PUSAT KENDALI.jpg", 1920, 1080)
 
+image computer_screen = im.Scale("assets/background/computer_screen.jpg", 1920, 1080)
+image office_large_screen = im.Scale("assets/background/office_large_scene.jpg", 1920, 1080)
+image shelf_old_box = im.Scale("assets/background/shelf_old_box.jpg", 1920, 1080)
+image old_shoes = im.Scale("assets/background/old_shoes.jpg", 1920, 1080)
+image split_screen = im.Scale("assets/background/split_screen.jpg", 1920, 1080)
+image mirror_tower_evening = im.Scale("assets/background/mirror_tower_evening.jpg", 1920, 1080)
+image elevator_inside = im.Scale("assets/background/elevator_inside.jpg", 1920, 1080)
+image transit_gate_locked = im.Scale("assets/background/transit_gate_locked.jpg", 1920, 1080)
+image old_market_ruins = im.Scale("assets/background/old_market_ruins.png", 1920, 1080)
+image factory_apartements = im.Scale("assets/background/factory_apartements.png", 1920, 1080)
+image mural_walls = im.Scale("assets/background/mural_walls.png", 1920, 1080)
+image distribution_square = im.Scale("assets/background/distribution_square.png", 1920, 1080)
+image raka_crowd = im.Scale("assets/background/raka_crowd.png", 1920, 1080)
+image adrian_stage_close = im.Scale("assets/background/adrian_stage_close.png", 1920, 1080)
 
 #adrian jas
 image adrian jas marah= "assets/character/adrian_wiratma/kostum_jas/Jas_Marah.png"
