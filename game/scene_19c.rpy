@@ -1,91 +1,123 @@
 ## ============================================================
-##  MIRROR — Scene 19C
+##  MIRROR — Scene 19C (Updated Format)
 ##  Judul   : MIRROR Diungkap
 ##  Karakter: Raka, Adrian
-##  Latar   : minister_room
+##  Latar   : minister_room_(adrian)
 ## ============================================================
 
 label scene_19c:
 
-    scene minister_room
-    with dissolve
+    scene minister_room_(adrian) with dissolve
 
-    show raka formal serius at left
-    show adrian jas serius at right
+    # Menampilkan Raka dan Adrian dengan posisi yang tetap konsisten
+    show Formal_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    
+    show Jas_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
     "Adrian mengaktifkan layar besar."
 
+    # Menggunakan transisi dissolve untuk layar sistem agar terasa seperti hologram/layar digital
     system "Sistem MIRROR — Overview"
 
-    "Jaringan kompleks muncul."
-    "Data perilaku."
-    "Preferensi."
-    "Pola emosi."
-    "Semua terhubung."
+    "Jaringan kompleks muncul. Data perilaku, preferensi, hingga pola emosi semuanya terhubung dalam satu peta besar."
 
-    show adrian jas serius at right
+    show Jas_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
-    adrian "Ini bukan sekadar iklan."
-    adrian "Ini adalah sistem navigasi manusia."
-    adrian "Kita tidak memaksa."
-    adrian "Kita mengarahkan."
+    adrian "Ini bukan sekadar iklan. Ini adalah sistem navigasi manusia."
+    adrian "Kita tidak memaksa. Kita mengarahkan."
 
-    show raka formal serius at left
+    show Formal_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Dengan memanipulasi persepsi."
 
-    show adrian jas serius at right
+    show Jas_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     adrian "Dengan memahami kelemahan."
 
     "Adrian menatap tajam."
 
-    adrian "Kau pikir dunia di luar lebih jujur?"
-    adrian "Pasar bebas?"
-    adrian "Itu hanya manipulasi tanpa koordinasi."
-    adrian "Kita membuatnya... efisien."
+    adrian "Kau pikir dunia di luar lebih jujur? Pasar bebas?"
+    adrian "Itu hanya manipulasi tanpa koordinasi. Kita membuatnya... efisien."
 
-    show raka formal serius at left
+    show Formal_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Dengan mengorbankan pilihan."
 
-    show adrian jas serius at right
+    show Jas_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     adrian "Dengan menghilangkan ilusi pilihan yang salah."
 
-    "Kalimat itu terlalu rapi."
-    "Dan terlalu berbahaya."
-
-    show adrian jas serius at right
+    "Kalimat itu terlalu rapi. Dan terlalu berbahaya."
 
     adrian "Kau lihat data kesepian itu, kan?"
 
-    show raka formal terkejut at left
+    show Formal_Terkejut:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "..."
 
-    show adrian jas senyum at right
+    show Jas_Senyum:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
-    adrian "Tentu saja kau lihat."
-    adrian "Aku sengaja tidak menyembunyikannya."
+    adrian "Tentu saja kau lihat. Aku sengaja tidak menyembunyikannya."
 
-    show raka formal serius at left
+    show Formal_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Kenapa?"
 
-    show adrian jas serius at right
+    show Jas_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
-    adrian "Karena itu bukan kegagalan."
-    adrian "Itu efek samping."
+    adrian "Karena itu bukan kegagalan. Itu efek samping."
 
-    show raka formal serius at left
+    show Formal_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Manusia bukan angka sampingan."
 
-    show adrian jas serius at right
+    show Jas_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     adrian "Negara bukan ruang terapi."
 
     "Benturan pertama terasa nyata."
+
+    # Menggunakan transisi cepat untuk menutup adegan ini
+    with flash
 
     jump scene_19d
