@@ -43,7 +43,7 @@ label scene6:
     
     "Raka menatap layar lama."
     stop music fadeout 4.0
-    scene split_screen with dissolve #blom ada bg nya
+    scene split_screen with dissolve
     
     "Di satu sisi: layar modern yang menawarkan masa depan."
     "Di sisi lain: sepatu tua yang menolak dilupakan."
