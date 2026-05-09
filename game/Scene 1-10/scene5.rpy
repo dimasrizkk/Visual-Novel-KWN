@@ -7,7 +7,7 @@ label scene5:
     "Malam."
     "Apartemen Raka terlalu rapi untuk disebut rumah."
 
-    show raka formal sedih: #tired gada gambarnya
+    show raka formal tired:
         xalign 0.5
         yalign 1.1
         zoom 0.85
@@ -18,7 +18,7 @@ label scene5:
     "Ia melepaskan jas. Menyalakan lampu. Mematikan lagi."
     "Sunyi."
 
-    scene shelf_old_box with dissolve #blom ada bg
+    scene shelf_old_box with dissolve
     
     "Di sudut lemari, sebuah kotak tua."
     
@@ -29,7 +29,7 @@ label scene5:
 
     scene white
     with Fade(0.1, 0.0, 0.5)
-    scene old_shoes with dissolve #blom ada bg nya jg
+    scene old_shoes with dissolve
     
     "Sepasang sepatu kulit."
     "Buatan tangan."
