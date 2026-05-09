@@ -117,6 +117,7 @@ image raka formal sedih= "assets/character/raka_pradana/kostum_formal/Formal_Sed
 image raka formal senyum= "assets/character/raka_pradana/kostum_formal/Formal_Senyum.png"
 image raka formal serius= "assets/character/raka_pradana/kostum_formal/Formal_Serius.png"
 image raka formal terkejut= "assets/character/raka_pradana/kostum_formal/Formal_Terkejut.png"
+image raka formal tired= "assets/character/raka_pradana/kostum_formal/Formal_Tired.png""
 
 #raka rebel
 image raka rebel marah= "assets/character/raka_pradana/kostum_rebel/Rebel_Marah.png"
@@ -126,3 +127,13 @@ image raka rebel senyum = "assets/character/raka_pradana/kostum_rebel/Rebel_Seny
 image raka rebel serius= "assets/character/raka_pradana/kostum_rebel/Rebel_Serius.png"
 image raka rebel terkejut= "assets/character/raka_pradana/kostum_rebel/Rebel_Terkejut.png"
 
+#karakter tambahan
+image old woman = "assets/character/karakter_tambahan/Old_Woman.png"
+image official shadow = "assets/character/karakter_tambahan/Official_Shadow.png"
+image penjaga gerbang = "assets/character/karakter_tambahan/Penjaga_Gerbang.png"
+image worker_npc = "assets/character/karakter_tambahan/Worker.png"
+image ayah arman = "assets/character/karakter_tambahan/Arman_Pradana_(Ayah_Raka).png"
+image pak jaya = "assets/character/karakter_tambahan/Pak_Jaya_Pengrajin_Sepatu.png"
+image penjaga core mirror = "assets/character/karakter_tambahan/Penjaga_Core_Mirror.png"
+image senior analyst = "assets/character/karakter_tambahan/Senior_Data_Analyst.png"
+image pengrajin bawah = "assets/character/karakter_tambahan/Pengrajin_Bawah_Tanah.png"
