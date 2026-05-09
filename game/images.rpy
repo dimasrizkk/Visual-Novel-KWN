@@ -14,6 +14,7 @@ image alley_dark = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
 image ruang_sisa_outside = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
 image city_night_rain = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
 image alley_entrance_far = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
+image alley_exit_night = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
 
 # 5. GANG TUA PAGI.png
 image city_walk_bridge = im.Scale("assets/background/GANG TUA PAGI.png", 1920, 1080)
@@ -34,6 +35,8 @@ image adrian_office_wide = im.Scale("assets/background/KANTOR ELITE_RUANG ADRIAN
 # 10. KANTOR MIRROR (PUSAT OPERASI).jpg
 image mirror_office_day = im.Scale("assets/background/KANTOR MIRROR (PUSAT OPERASI).jpg", 1920, 1080)
 image office_hall = im.Scale("assets/background/KANTOR MIRROR (PUSAT OPERASI).jpg", 1920, 1080)
+image raka_desk = im.Scale("assets/background/KANTOR MIRROR (PUSAT OPERASI).jpg", 1920, 1080)
+image mirror_office_morning = im.Scale("assets/background/KANTOR MIRROR (PUSAT OPERASI).jpg", 1920, 1080)
 
 # 11. KOTA NAWASENA.jpg
 image city_night_hologram = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
@@ -52,6 +55,8 @@ image core_main = im.Scale("assets/background/MIRROR PUSAT KENDALI.jpg", 1920, 1
 image ministry_control_room = im.Scale("assets/background/MIRROR PUSAT KENDALI.jpg", 1920, 1080)
 
 image computer_screen = im.Scale("assets/background/computer_screen.jpg", 1920, 1080)
+image monitor_dashboard = im.Scale("assets/background/computer_screen.jpg", 1920, 1080)
+
 image office_large_screen = im.Scale("assets/background/office_large_scene.jpg", 1920, 1080)
 image shelf_old_box = im.Scale("assets/background/shelf_old_box.jpg", 1920, 1080)
 image old_shoes = im.Scale("assets/background/old_shoes.jpg", 1920, 1080)
