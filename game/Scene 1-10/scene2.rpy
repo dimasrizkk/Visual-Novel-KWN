@@ -23,7 +23,7 @@ label scene2:
 
     raka "...Baik."
 
-    scene computer_screen with dissolve #bg computer_screen blum ada
+    scene computer_screen with dissolve 
 
     "Kursor berkedip. Sebuah kota menunggu kalimat berikutnya."
 
