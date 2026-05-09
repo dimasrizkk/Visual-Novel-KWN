@@ -1,5 +1,5 @@
 ## ============================================================
-##  MIRROR — Scene 18A
+##  MIRROR — Scene 18A (Updated Format)
 ##  Judul   : Kembali ke Ruang Sisa
 ##  Karakter: Raka, Nara
 ##  Latar   : alley → ruang_sisa
@@ -7,52 +7,84 @@
 
 label scene_18a:
 
-    scene alley
-    with fade
+    scene GANG TUA MALAM with fade
 
-    play music "hidden_path.ogg"
+    # Memutar BGM dengan efek fadein agar transisi halus
+    play music "hidden_path.ogg" fadein 2.0
 
     "Sore harinya, langkah Raka kembali menemukan gang sempit itu lebih cepat daripada ingatannya mengakui."
     "Kali ini ia datang bukan karena perangkat rusak."
     "Dan itu lebih berbahaya."
 
-    scene ruang_sisa
-    with dissolve
+    scene RUANG SISA with dissolve
 
-    show nara bengkel netral at center
+    # Nara muncul di tengah dengan pengaturan koordinat dan zoom yang presisi
+    show Bengkel_Netral:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
     nara "Kalau device-mu rusak lagi, aku mulai curiga itu sengaja."
 
-    show raka casual netral at left
+    # Raka muncul di sisi kiri
+    show Casual_Netral:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
     raka "Aku bawa sesuatu."
 
-    show nara bengkel serius at center
+    show Bengkel_Serius:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
 
     nara "Biasanya itu kalimat pembawa masalah."
 
-    hide raka
+    # Menyembunyikan Raka saat adegan fokus pada penyerahan tablet
+    hide raka with dissolve
+
+    # SFX Suara geseran tablet (jika ada asetnya)
+    # play sound "tablet_slide.ogg"
 
     "Raka menyerahkan tablet. Nara membaca layar."
 
-    show nara bengkel netral at center
+    show Bengkel_Netral:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
 
     nara "..."
     nara "Dapet dari mana?"
 
-    show raka casual netral at left
+    show Casual_Netral:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
     raka "Kantor."
 
-    show nara bengkel terkejut at center
+    show Bengkel_Serius:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
 
     nara "Kau gila?"
 
-    show raka casual senyum at left
+    show Casual_Senyum:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Bisa diperdebatkan."
 
-    show nara bengkel serius at center
+    show Bengkel_Serius:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
 
     "Nara terus membaca."
 
@@ -60,31 +92,55 @@ label scene_18a:
     nara "Makna kerja turun."
     nara "Ketergantungan konsumsi naik."
 
-    show nara bengkel sedih at center
+    show Bengkel_Sedih:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
 
     nara "Mereka bahkan ngukur luka yang mereka bikin."
 
-    show raka casual netral at left
+    # Menambahkan variabel Awareness karena Raka mulai membagikan data internal
+    $ awareness += 1
+
+    show Casual_Netral:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Aku pikir kalian bakal senang lihat bukti."
 
-    show nara bengkel sedih at center
+    show Bengkel_Sedih:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
 
     nara "Aku tidak senang."
     nara "Aku lelah, ternyata perkiraanku benar."
 
     "Ia mengunci tablet, lalu menatap Raka lebih serius dari biasanya."
 
-    show nara bengkel serius at center
+    show Bengkel_Serius:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
 
     nara "Mau lihat sesuatu?"
 
-    show raka casual netral at left
+    show Casual_Netral:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Apa?"
 
-    show nara bengkel serius at center
+    show Bengkel_Serius:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
 
     nara "Versi kota yang nggak masuk dashboard."
+
+    # Menghentikan musik perlahan sebelum transisi ke scene berikutnya
+    stop music fadeout 2.0
 
     jump scene_18b
