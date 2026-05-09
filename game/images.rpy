@@ -117,7 +117,7 @@ image raka formal sedih= "assets/character/raka_pradana/kostum_formal/Formal_Sed
 image raka formal senyum= "assets/character/raka_pradana/kostum_formal/Formal_Senyum.png"
 image raka formal serius= "assets/character/raka_pradana/kostum_formal/Formal_Serius.png"
 image raka formal terkejut= "assets/character/raka_pradana/kostum_formal/Formal_Terkejut.png"
-image raka formal tired= "assets/character/raka_pradana/kostum_formal/Formal_Tired.png""
+image raka formal tired= "assets/character/raka_pradana/kostum_formal/Formal_Tired.png"
 
 #raka rebel
 image raka rebel marah= "assets/character/raka_pradana/kostum_rebel/Rebel_Marah.png"
