@@ -132,21 +132,23 @@ style namebox_label is say_label
 
 style window:
     xalign 0.5
+    yalign 0.9
     xfill True
-    yalign gui.textbox_yalign
-    ysize gui.textbox_height
+    xsize 1628
+    ysize 350
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background gui.textbox_background    
+
+    padding (80, 50, 80, 50)
 
 style namebox:
-    xpos gui.name_xpos
-    xanchor gui.name_xalign
-    xsize gui.namebox_width
-    ypos gui.name_ypos
-    ysize gui.namebox_height
-
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
-    padding gui.namebox_borders.padding
+    xpos 100          
+    xanchor 0.0
+    xsize None       
+    ypos -10         
+    
+    background None
+    padding (15, 5, 15, 5)
 
 style say_label:
     properties gui.text_properties("name", accent=True)
@@ -156,10 +158,15 @@ style say_label:
 style say_dialogue:
     properties gui.text_properties("dialogue")
 
-    xpos gui.dialogue_xpos
-    xsize gui.dialogue_width
-    ypos gui.dialogue_ypos
-
+    xpos 0.5            
+    xanchor 0.5
+    
+    text_align 0.5      
+    
+    yalign 0.5         
+    
+    xsize 1350          
+    
     adjust_spacing False
 
 ## Input screen ################################################################
