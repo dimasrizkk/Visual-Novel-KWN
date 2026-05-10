@@ -1,5 +1,5 @@
 label scene13:
-    scene workbench_tension with dissolve #bg blum ada
+    scene workbench_tension with dissolve
     show raka formal netral: 
         xalign 0.0
         yalign 1.6
