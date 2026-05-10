@@ -71,6 +71,14 @@ image distribution_square = im.Scale("assets/background/distribution_square.png"
 image raka_crowd = im.Scale("assets/background/raka_crowd.png", 1920, 1080)
 image adrian_stage_close = im.Scale("assets/background/adrian_stage_close.png", 1920, 1080)
 
+image workshop_corner = im.Scale("assets/background/workshop_corner.jpg", 1920, 1080)
+image quiet_bench = im.Scale("assets/background/workshop_corner.jpg", 1920, 1080)
+
+image shoes_close = im.Scale("assets/background/shoes_close.jpg", 1920, 1080)
+image radio_close = im.Scale("assets/background/radio_close.jpg", 1920, 1080)
+image coffee_manual = im.Scale("assets/background/coffee_manual.jpg", 1920, 1080)
+image workshop_tension = im.Scale("assets/background/workshop_tension.jpg", 1920, 1080)
+
 #adrian jas
 image adrian jas marah= "assets/character/adrian_wiratma/kostum_jas/Jas_Marah.png"
 image adrian jas netral= "assets/character/adrian_wiratma/kostum_jas/Jas_Netral.png"
