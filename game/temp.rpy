@@ -1,23 +1,30 @@
-define e = Character("Eileen")
+# --- KARAKTER UTAMA ---
+define raka = Character("Raka", color="#00ffff")
+define nara = Character("Nara", color="#ffaa00")
+define adrian = Character("Adrian", color="#bdc3c7")
+define system = Character("System", color="#ff00ff")
 
-# Deklarasi Karakter
-define raka = Character("Raka")
-define worker = Character("Worker")
-define system = Character("System", color="#00ff00")
-define adrian = Character("Adrian")
-define ayah = Character("Ayah", what_italic=True) #deklarasi utk suara memori scene5
-define worker1 = Character("Worker 1") #deklarasi utk scene 8
-define worker2 = Character("Worker 2")
-define worker3 = Character("Worker 3")
-define penjaga = Character("Penjaga") #deklarasi utk scene 9
-define old_woman = Character("Nenek Tua")
-define pedagang = Character("Suara Pedagang", what_italic=True)
-define anak_kecil = Character("Suara Anak Kecil", what_italic=True)
-define kerumunan = Character("Kerumunan") #deklarasi utk scene 10
-define anak = Character("Anak Kecil")
-define ibu = Character("Ibu")
-define nara = Character("Nara") #deklarasi utk scene 11
-define penyiar = Character("Penyiar Radio", what_italic=True) #deklarasi utk scene 12
-define analyst = Character("Senior Analyst") #deklarasi utk scene 17
+# --- KORPORAT / PEKERJA ---
+define senior_analyst = Character("Senior Analyst", color="#7fb3d5")
+define worker = Character("Worker", color="#95a5a6")
+define worker1 = Character("Worker 1", color="#95a5a6")
+define worker2 = Character("Worker 2", color="#95a5a6")
+define worker3 = Character("Worker 3", color="#95a5a6")
+define official_shadow = Character("Official Shadow", color="#636e72")
 
+# --- WARGA ZONA TUA ---
+define penjaga = Character("Penjaga", color="#5dade2")
+define old_woman = Character("Nenek Tua", color="#d4ac0d")
+define ibu = Character("Ibu", color="#ec7063")
+define anak = Character("Anak Kecil", color="#f1948a")
+define pak_jaya = Character("Pak Jaya", color="#e67e22")
+define pengrajin_bawah = Character("Pengrajin Bawah", color="#d35400")
 
+# --- SUARA LATAR & MASSA ---
+define kerumunan = Character("Kerumunan", color="#aab7b8")
+define pedagang = Character("Suara Pedagang", color="#f7dc6f", what_italic=True)
+define anak_kecil = Character("Suara Anak Kecil", color="#f1948a", what_italic=True)
+
+# --- MEDIA & MEMORI (Dengan Italic) ---
+define ayah = Character("Ayah", color="#ff6b6b", what_italic=True) 
+define penyiar = Character("Penyiar Radio", color="#a569bd", what_italic=True)

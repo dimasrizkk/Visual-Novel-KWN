@@ -1,6 +1,6 @@
 label scene10:
     # Memutar SFX kerumunan dari kejauhan dan BGM upacara
-    play ambient crowd_far.mp3 fadein 1.0 volume 0.5
+    play ambient "crowd_far.mp3" fadein 1.0 volume 0.5
     #play sound crowd_cheer fadein 2.0 volume 0.5
     
     scene distribution_square with fade
@@ -16,8 +16,12 @@ label scene10:
     "Raka berhenti."
     "Di layar raksasa, wajah Adrian muncul setinggi gedung."
     
-    show adrian formal at center with dissolve
-    
+    show adrian jas senyum:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.9
+    with dissolve   
+
     kerumunan "Hidup Menteri Adrian!"
     kerumunan "Nawasena maju!"
     
@@ -84,6 +88,13 @@ label scene10:
     "Tak ada menu pilihan untuk pertanyaan seperti itu."
 
     scene adrian_stage_close with dissolve
+
+    scene adrian_stage_close with dissolve
+    show adrian jas senyum:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.9
+    with dissolve
     
     adrian "Kemajuan selalu menuntut sesuatu untuk ditinggalkan."
     adrian "Pastikan yang kalian tinggalkan hanyalah beban."

@@ -1,53 +1,73 @@
 ## ============================================================
-##  MIRROR — Scene 20E
+##  MIRROR — Scene 20E (Updated Format)
 ##  Judul   : Foreshadow Penggerebekan
 ##  Karakter: Raka, Nara
-##  Latar   : raka_apartement
+##  Latar   : APARTEMEN RAKA
 ## ============================================================
 
 label scene_20e:
 
-    scene raka_apartement
+    scene APARTEMEN RAKA with dissolve
+
+    show Casual_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    
+    show Eksplor_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
     with dissolve
 
-    show raka casual serius at left
-    show nara eksplor serius at right
-
+    # SFX Sirene jauh untuk memberikan tekanan mendadak
     play sound "distant_siren.ogg"
 
-    "Suara sirene jauh terdengar."
-    "Tidak keras."
-    "Tapi cukup untuk membuat suasana berubah."
+    "Suara sirene jauh terdengar. Tidak keras, tapi cukup untuk membuat suasana di dalam ruangan berubah seketika."
 
-    show nara eksplor terkejut at right
+    show Eksplor_Terkejut:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     nara "...Mereka mulai."
 
-    show raka casual terkejut at left
+    show Casual_Terkejut:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Secepat ini?"
 
-    show nara eksplor serius at right
+    show Eksplor_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
-    nara "Gue bilang kan."
-    nara "Ini cuma soal waktu."
+    nara "Gue bilang kan. Ini cuma soal waktu."
 
-    "Nara berjalan ke pintu."
+    "Nara berjalan terburu-buru ke arah pintu."
 
-    hide raka
+    hide Casual_Terkejut with dissolve
 
-    show nara eksplor serius at center
+    show Eksplor_Serius:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
-    nara "Gue cabut."
-    nara "lo sebaiknya tutup mulut."
+    nara "Gue cabut. Lo sebaiknya tutup mulut."
 
-    "Nara berhenti sebentar."
+    "Nara berhenti sebentar di ambang pintu, menoleh sekali lagi."
 
-    nara "Dan Raka.."
+    nara "Dan Raka..."
     nara "Jangan kira lo bisa netral di cerita ini."
 
-    hide nara
+    hide Eksplor_Serius with dissolve
 
+    # SFX Pintu ditutup dengan cepat
     play sound "door_close.ogg"
+
+    "Langkah kakinya menghilang di lorong, meninggalkan Raka sendirian dengan peringatan yang menggantung di udara."
 
     jump scene_20f

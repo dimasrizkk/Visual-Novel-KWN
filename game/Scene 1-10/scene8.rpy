@@ -11,7 +11,11 @@ label scene8:
 
     scene elevator_inside with dissolve
     
-    show raka tired at center
+    show raka formal tired:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
     
     play sound lift_tertutup fadein 1.5
     "Pintu lift menutup."
@@ -52,7 +56,7 @@ label scene8:
     "Udara kota menyambutnya dengan aroma logam basah dan parfum sintetis dari billboard jalanan."
     
     # Memunculkan gambar iklan hologram
-    show hologram_ads with dissolve
+    show hologram_ads with dissolve #blom bikin overlay buat hologram ini
     
     system "Raka, berdasarkan pola langkahmu, kau tampak letih."
     system "Kopi spesial tersedia 40 meter di depan."
@@ -61,6 +65,12 @@ label scene8:
     raka "Tidak."
     
     system "Penolakan tercatat."
+
+    show raka formal marah: 
+        xalign 0.5
+        yalign 1.1
+        zoom 0.43
+    with dissolve
     
     raka "Aku bicara sendiri sekarang."
     
@@ -77,7 +87,13 @@ label scene8:
     hide hologram_ads with dissolve
     
     "Langkah Raka terhenti."
-    
+
+    show raka formal terkejut:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
+
     raka "Hm?"
     
     # SFX Error utama
@@ -99,7 +115,13 @@ label scene8:
     
     "Mencoba membuka pintu stasiun."
     system "Akses ditolak."
-    
+
+    show raka formal marah: 
+        xalign 0.5
+        yalign 1.1
+        zoom 0.43
+    with dissolve
+
     raka "Serius?"
     
     "Untuk sesaat, seorang pria dengan gaji tinggi dan akses luas berubah menjadi seseorang yang tak bisa membeli air."
@@ -125,7 +147,13 @@ label scene8:
     
     "Sebuah alamat muncul."
     "Zona Tua. Sektor Pinggiran."
-    
+
+    show raka formal netral:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
+
     raka "Masih ada tempat seperti itu?"
     
     system "Catatan: area tidak direkomendasikan."

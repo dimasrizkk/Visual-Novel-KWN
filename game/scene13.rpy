@@ -1,13 +1,27 @@
 label scene13:
     scene workbench_tension with dissolve
+    show raka formal netral: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+
+    show nara bengkel serius:
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85
     
     # Memutar BGM debat yang tegang namun bertempo rendah
-    play music debate_low fadein 2.0
+    play music debate_low fadein 2.0 volume 0.5
     
     # SFX suara memasang obeng
     play sound screwdriver_turn
     
     "Nara memasang obeng, lalu bicara tanpa melihatnya."
+
+    show nara bengkel netral:
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85
     
     nara "Kau kerja di pusat kota."
     raka "Keliatannya?"
@@ -54,7 +68,12 @@ label scene13:
     raka "Lalu?"
     
     nara "Negara mengambil desainnya."
-    
+
+    show raka formal terkejut: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+
     raka "Diambil?"
     
     nara "\"Dipinjam permanen\"."
@@ -68,9 +87,25 @@ label scene13:
     "Ruang itu mendadak lebih sempit."
     
     raka "Maaf."
+
+    show nara bengkel marah:
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85
+
     nara "Jangan."
     nara "Kata itu tak ada arti kalau tidak mengubah apa pun."
-    
+
+    show raka formal netral: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+
+    show nara bengkel netral:
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85
+
     raka "Kau selalu bicara seperti menuduh?"
     nara "Kau selalu bicara seperti membela sesuatu yang belum tentu layak dibela?"
     
@@ -91,7 +126,7 @@ label scene13:
     "Nara berjalan ke rak, mengambil lampu meja tua."
     
     # SFX suara meletakkan barang usang berbahan logam/kayu ke atas meja
-    play sound lamp_place_table
+    play sound lamp_place_table #blm ada soundnya, jadi pake 554737__dynamique__moving-small-box
     
     nara "Lihat ini."
     nara "Dulu dibuat di blok selatan. Pabrik keluarga."

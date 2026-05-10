@@ -1,5 +1,5 @@
 ## ============================================================
-##  MIRROR — Scene 18C
+##  MIRROR — Scene 18C (Updated Format)
 ##  Judul   : Raka vs Nara (Lanjutan)
 ##  Karakter: Raka, Nara
 ##  Latar   : community_hub2 → community_hub
@@ -7,110 +7,130 @@
 
 label scene_18c:
 
-    scene community_hub2
+    scene community_hub2 with dissolve
+
+    # Mengatur posisi Raka dan Nara agar sejajar secara visual
+    show Casual_Netral:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    
+    show Eksplor_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
     with dissolve
 
-    show raka casual netral at left
-    show nara eksplor serius at right
+    nara "Nah. Sekarang bilang lagi soal efisiensi."
 
-    nara "Nah."
-    nara "Sekarang bilang lagi soal efisiensi."
-
-    show raka casual serius at left
+    show Casual_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Aku nggak bilang kalian nggak berharga."
 
-    show nara eksplor serius at right
-
     nara "Tapi?"
-
-    show raka casual serius at left
 
     raka "Tapi kota sebesar ini butuh skala."
 
-    show nara eksplor netral at right
+    show Eksplor_Netral:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     nara "Setuju."
-
-    show raka casual serius at left
 
     raka "Butuh kecepatan."
 
-    show nara eksplor netral at right
-
     nara "Setuju."
-
-    show raka casual serius at left
 
     raka "Butuh sistem."
 
-    show nara eksplor netral at right
-
     nara "Setuju."
 
-    show raka casual terkejut at left
+    show Casual_Terkejut:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Lah?"
 
-    show nara eksplor serius at right
+    show Eksplor_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     nara "Aku nggak lawan sistem."
     nara "Aku lawan sistem yang bikin semua orang cuma boleh jadi pembeli."
 
-    show raka casual netral at left
+    show Casual_Netral:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     "Raka diam."
-
-    show nara eksplor serius at right
 
     nara "Kenapa orang harus memilih antara modern atau ditinggalkan?"
     nara "Mengapa tidak ada pilihan lain?"
 
-    show raka casual netral at left
-
     raka "Karena dunia dibentuk oleh sistem itu."
-
-    show nara eksplor serius at right
 
     nara "Benar."
     nara "Makanya sistem suka orang yang udah nyerah duluan."
 
     "Kena."
 
-    scene community_hub
+    # Transisi ke balkon basement
+    scene community_hub with dissolve
+
+    show Casual_Netral:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    
+    show Eksplor_Netral:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
     with dissolve
 
-    show raka casual netral at left
-    show nara eksplor netral at right
-
     "Dari balkon kecil basement, Raka melihat seluruh ruangan."
-    "Tak ada teknologi canggih."
-    "Tak ada AI."
-    "Tak ada presentasi menteri."
-    "Tapi setiap orang di bawah sana sedang membuat sesuatu."
-    "Bukan hanya membeli."
+    "Tak ada teknologi canggih. Tak ada AI. Tak ada presentasi menteri."
+    "Tapi setiap orang di bawah sana sedang membuat sesuatu. Bukan hanya membeli."
 
-    show raka casual serius at left
+    show Casual_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Kalau pemerintah tahu tempat ini..."
 
-    show nara eksplor senyum at right
+    show Eksplor_Senyum:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     nara "Makanya kami nggak pasang billboard."
 
-    show raka casual netral at left
+    show Casual_Netral:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Kalian nyimpen barang. Bikin barang. Lalu apa?"
 
-    show nara eksplor serius at right
+    show Eksplor_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     nara "Lalu ngajarin."
 
-    show raka casual netral at left
-
     raka "Ke siapa?"
 
-    show nara eksplor serius at right
+    # Point Awareness bertambah karena Raka mulai memahami perspektif baru
+    $ awareness += 1
 
     nara "Ke generasi yang belum keburu percaya kalau satu-satunya masa depan adalah checkout."
 

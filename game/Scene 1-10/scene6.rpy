@@ -12,7 +12,11 @@ label scene6:
     system "Tujuan: menurunkan kepercayaan warga pada produk lokal sebesar 72%%"
     system "Kurator utama: Raka Pradana"
     
-    show raka shocked at center
+    show raka casual terkejut:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.4
+    with dissolve
     
     raka "...Final?"
     

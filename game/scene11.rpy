@@ -34,7 +34,7 @@ label scene11:
     # Menghentikan BGM gang sunyi sebelum masuk ke dalam
     stop music fadeout 1.5
 
-    scene ruang_sisa_inside with fade
+    scene workshop_corner with fade #ruang sisa inside gua ganti jd workshop
     
     # BGM berubah menjadi hangat saat masuk ke bengkel
     play music workshop_warm fadein 2.0
@@ -46,8 +46,12 @@ label scene11:
     "Rak-rak kayu berisi radio tua, kipas angin, mesin jahit, sepatu kulit, jam dinding, lampu meja, bahkan ketel penyok yang dipoles bersih."
     "Di meja kerja, percikan kecil muncul dari solder."
     
-    show nara work at center with dissolve
-    
+    show nara bengkel serius:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve    
+
     "Seorang perempuan menunduk, fokus memperbaiki papan sirkuit tanpa menoleh sedikit pun."
     "Tangannya cepat. Gerakannya tenang."
     "Seolah dunia di luar tak cukup penting untuk mengganggu ritmenya."
@@ -63,8 +67,17 @@ label scene11:
     
     "Ia akhirnya menoleh."
     
-    show nara neutral at center
-    
+    show nara bengkel netral: 
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85    
+
+    show raka formal netral: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
+
     "Tatapannya tajam, tapi tidak sibuk menghakimi."
     "Itu justru lebih membuat Raka tak nyaman."
     

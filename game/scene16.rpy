@@ -1,27 +1,34 @@
 label scene16:
     scene alley_exit_night with fade
+    show raka formal netral: 
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
     
     # Memutar ambient suara kota yang bising
-    play ambient "audio/city_noise_loud.mp3" fadein 2.0
+    play music city_hum fadein 2.0 #city_noise_loud gaada jadi pake city_hum
     
     "Raka keluar ke gang."
     "Suara kota kembali terdengar."
     "Namun terasa lebih berisik dari sebelumnya."
     
-    play sound "audio/device_ping.mp3"
+    play sound device_ping
     system "Rute tercepat ke rumah telah disiapkan."
     
     "Raka tidak bergerak."
-    "Ia menoleh ke belakang."
-    
-    scene ruang_sisa_door with dissolve
-    
+    "Ia menoleh ke belakang."    
     "Lampu kecil di atas Ruang Sisa masih menyala."
     "Tempat itu tak megah."
     "Tak efisien."
     "Tak relevan."
     "Namun anehnya, lebih sulit dilupakan daripada seluruh alun-alun tempat menteri tadi berpidato."
-    
+
+    show raka formal netral: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+
     # Logika percabangan berdasarkan akumulasi poin
     if loyalty >= 2:
         "Langkahnya berhenti."
@@ -30,13 +37,23 @@ label scene16:
         
         # Transisi audio kembali ke dalam ruangan
         stop ambient fadeout 1.5
-        scene ruang_sisa_inside with dissolve
-        play music "audio/workshop_warm.mp3" fadein 2.0
+        scene workshop_corner with dissolve
+        play music workshop_warm fadein 2.0
         
         "Ia kembali masuk."
         
-        show nara surprised at center
-        
+        show raka formal netral: 
+            xalign 0.0
+            yalign 1.6
+            zoom 0.85
+        with dissolve
+
+        show nara bengkel netral:
+            xalign 0.95
+            yalign 1.6
+            zoom 0.85
+        with dissolve        
+
         nara "Perangkat rusak lagi?"
         
         raka "Tidak."

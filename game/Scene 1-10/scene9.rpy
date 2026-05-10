@@ -2,14 +2,38 @@ label scene9:
     scene transit_gate_locked with fade
     
     # Memutar BGM perjalanan di kota tua
-    play music old_city_walk.mp3 fadein 2.0
-    
+    play music "old_city_walk.mp3" fadein 2.0
+
+    show raka formal netral:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
+
     "Karena perangkatnya mati, gerbang transit menolak membukakan jalan."
-    
+
+    show raka formal tired :
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
+
+    show penjaga:
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85
+    with dissolve
+
     penjaga "Identitas?"
     raka "Gangguan sistem."
     penjaga "Kalau sistem bilang tidak, saya juga bilang tidak."
-    
+
+    show raka formal marah: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.38
+    with dissolve
+
     raka "Aku pegawai Divisi MIRROR."
     
     "Penjaga menatap datar."
@@ -27,13 +51,20 @@ label scene9:
     "Lampu tak lagi dibuat untuk memikat. Hanya untuk menerangi."
 
     scene old_market_ruins with dissolve
-    
+
+    show raka formal netral:   
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
+
     "Bangunan pertama yang ia lewati adalah pasar tua."
     "Atau sisa dari sesuatu yang dulu disebut pasar."
     "Papan kayu lapuk. Rolling door berkarat. Lorong kosong tempat tawar-menawar pernah terdengar seperti musik harian."
     
-    raka pelan "...Aku pernah ke sini."
-    
+    raka "...Aku pernah ke sini."
+
+    scene black with dissolve #buat flashback nya gt
     # Bagian Flashback - Bisa ditambahkan efek suara reverb atau gema
     ayah "Pegang kuat-kuat tangan Bapak."
     pedagang "Sepatu kulit! Jahitan tangan!"
@@ -44,14 +75,37 @@ label scene9:
     
     "Kenangan datang tanpa izin."
     "Ia membencinya."
+
+    scene old_market_ruins with dissolve
+
+    show raka formal netral:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
     
     raka "Tempat seperti ini memang tak bisa bertahan."
-    
-    old_woman "Bertahan dari apa?"
 
-    scene old_market_corner with dissolve
     show old_woman at right
-    
+
+    show old_woman:
+        xalign 0.9
+        yalign 1.6
+        zoom 0.85
+    with dissolve
+
+    scene old_market_corner with dissolve 
+
+    show raka formal netral:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+
+    show old_woman:
+        xalign 0.9
+        yalign 1.6
+        zoom 0.85    
+
     "Seorang nenek duduk di kursi plastik, menjual dua termos teh dan tiga bungkus kue."
     
     raka "Saya tidak bicara dengan Anda."
@@ -73,8 +127,14 @@ label scene9:
     
     "Raka pergi sebelum percakapan itu sempat tinggal di kepalanya."
 
-    scene factory_apartments with dissolve
-    
+    scene factory_apartements with dissolve 
+
+    show raka formal netral:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
+
     "Di blok berikutnya berdiri apartemen mewah."
     "Halaman depannya menampilkan slogan:"
     
@@ -88,7 +148,12 @@ label scene9:
     raka "Mereka mengubah pabrik jadi pemandangan."
     "Kota ini pandai menjual luka sebagai desain."
 
-    scene mural_wall with dissolve
+    scene mural_walls with dissolve #blom ada bg nya
+
+    show raka formal netral:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
     
     "Ia melewati mural besar."
     "Separuh dinding menggambar Nawasena lama: kios, bengkel, orang tersenyum sambil bekerja."

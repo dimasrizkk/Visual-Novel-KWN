@@ -1,88 +1,89 @@
 ## ============================================================
-##  MIRROR — Scene 20A
+##  MIRROR — Scene 20A (Updated Format)
 ##  Judul   : Kamar Tanpa Suara
 ##  Karakter: Raka (monolog)
-##  Latar   : raka_apartement → flash black → raka_apartement
+##  Latar   : APARTEMEN RAKA → flash black → APARTEMEN RAKA
 ##  Catatan : Conditional berdasarkan flag awareness / ambition
 ## ============================================================
 
 label scene_20a:
 
-    scene raka_apartement
-    with fade
+    scene APARTEMEN RAKA with fade
 
-    play music "empty_room.ogg"
+    # Memutar BGM bertema kesunyian dan ruang kosong
+    play music "empty_room.ogg" fadein 3.0
 
     "Malam itu, apartemen Raka terasa lebih berisik dari biasanya."
-    "Bukan karena ukurannya berubah."
-    "Tapi karena pikirannya tidak lagi punya tempat untuk bersembunyi."
+    "Bukan karena ukurannya berubah. Tapi karena pikirannya tidak lagi punya tempat untuk bersembunyi."
 
-    show raka casual sedih at center
+    show Casual_Sedih:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
     "Lampu tidak dinyalakan."
-    "Kota di luar jendela cukup terang untuk memperlihatkan segalanya."
-    "Dan cukup dingin untuk tidak memberi kehangatan apa pun."
+    "Kota di luar jendela cukup terang untuk memperlihatkan segalanya, dan cukup dingin untuk tidak memberi kehangatan apa pun."
 
     raka "(dalam hati) ..."
 
-    "Di tangan kanannya.."
+    "Di tangan kanannya..."
 
+    # Logika kondisional berdasarkan pilihan di Scene 19D
     if awareness >= 2 or ambition >= 2:
         "Elite Drive."
-        "Kecil. Diam."
-        "Tapi terasa seperti beban yang tidak bisa dijelaskan."
+        "Kecil. Diam. Tapi terasa seperti beban yang tidak bisa dijelaskan."
     else:
         "Kosong."
         "Tapi anehnya terasa lebih berat dari biasanya."
 
-    "Di kepalanya.."
-    "Suara."
-    "Bukan satu."
-    "Banyak."
+    "Di kepalanya... Suara. Bukan satu. Banyak."
 
     raka "(dalam hati) Lo ngapain sih?"
-    raka "(dalam hati) Ini cuma kerjaan."
-    raka "(dalam hati) Data ya data."
+    raka "(dalam hati) Ini cuma kerjaan. Data ya data."
     raka "(dalam hati) Semua sistem punya cacat."
 
-    pause
+    pause 1.0
 
-    raka "(dalam hati) Tapi kalau semua orang tahu..."
-    raka "(dalam hati) kenapa nggak ada yang berhenti?"
+    raka "(dalam hati) Tapi kalau semua orang tahu... kenapa nggak ada yang berhenti?"
 
-    "Pertanyaan itu berbahaya."
-    "Karena jawabannya bukan tidak tahu."
-    "Tapi tidak mau kehilangan."
+    "Pertanyaan itu berbahaya. Karena jawabannya bukan 'tidak tahu', tapi 'tidak mau kehilangan'."
 
-    raka "(dalam hati) Lo juga sama."
-    raka "(dalam hati) Lo nggak berhenti."
+    raka "(dalam hati) Lo juga sama. Lo nggak berhenti."
     raka "(dalam hati) Lo cuma mulai mikir."
 
-    "Dan berpikir..."
-    "adalah awal dari ketidaknyamanan yang tidak bisa dibatalkan."
+    "Dan berpikir... adalah awal dari ketidaknyamanan yang tidak bisa dibatalkan."
 
     ## ── FLASH MEMORY — AYAH ──
 
-    scene black
-    with dissolve
+    scene black with dissolve
 
-    play music "memory_fragile.ogg"
+    # Transisi musik ke tema memori yang rapuh
+    play music "memory_fragile.ogg" fadein 2.0
 
     "Suara palu. Bau kulit. Cahaya sore masuk dari jendela kecil."
 
-    show raka casual netral at center
-
-    "Ayah" "Raka."
-    "Ayah" "Kalau kamu bikin sesuatu"
-    "Ayah" "pastikan kamu berani pakai hasilnya."
-
-    "Raka kecil tertawa."
-    "Sepatu kebesaran di kakinya."
-
-    scene raka_apartement
+    show Casual_Netral:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
     with dissolve
 
-    show raka casual sedih at center
+    # Menggunakan suara Ayah (pastikan karakter 'ayah' didefinisikan di characters.rpy)
+    "Ayah" "Raka."
+    "Ayah" "Kalau kamu bikin sesuatu, pastikan kamu berani pakai hasilnya."
+
+    "Raka kecil tertawa. Sepatu kebesaran di kakinya."
+
+    ## ── KEMBALI KE REALITA ──
+
+    scene APARTEMEN RAKA with dissolve
+
+    show Casual_Sedih:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
     raka "(dalam hati) ..."
     raka "(dalam hati) Gue bahkan nggak pakai apa pun yang gue buat."
@@ -90,18 +91,19 @@ label scene_20a:
 
     ## ── DUA SUARA ──
 
-    "Dua suara mulai berbentuk."
+    "Dua suara mulai berbentuk di dalam benaknya."
 
-    adrian_voice "Dunia tidak berubah oleh orang baik."
-    adrian_voice "Stabilitas lebih penting dari idealisme."
+    # Menggunakan karakter suara (voice) agar berbeda dari dialog fisik
+    adrian_voice "Dunia tidak berubah oleh orang baik. Stabilitas lebih penting dari idealisme."
     adrian_voice "Kau bisa naik lebih tinggi."
 
-    nara_voice "Orang kota ini tidak rusak."
-    nara_voice "Mereka cuma lupa cara berdiri."
+    nara_voice "Orang kota ini tidak rusak. Mereka cuma lupa cara berdiri."
     nara_voice "Lo mau jadi apa?"
 
-    "Dua arah."
-    "Dua masa depan."
+    "Dua arah. Dua masa depan."
     "Dan satu keputusan yang belum diambil."
+
+    # Menghentikan musik perlahan sebelum masuk ke klimaks
+    stop music fadeout 3.0
 
     jump scene_20b

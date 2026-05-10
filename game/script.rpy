@@ -3,17 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-
-define e = Character("Eileen")
-
-# Deklarasi Karakter
-
-
-
-
-
 # The game starts here.
-
 label start:
 
     #
@@ -36,16 +26,5 @@ label start:
     call scene15
     call scene16
     call scene17
-
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "tes tes tis tes"
-
-    e "jakang sf terbagus"
-
-    # This ends the game.
 
     return

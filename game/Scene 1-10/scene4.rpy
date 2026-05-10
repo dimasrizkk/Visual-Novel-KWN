@@ -8,8 +8,17 @@ label scene4:
     "Tak ada lukisan mahal. Tak ada dekorasi mewah."
     "Hanya meja logam, dinding kaca, dan pemandangan seluruh kota."
 
-    show adrian calm at right
-    show raka neutral at left
+    show adrian kantor senyum:
+        xalign 0.9
+        yalign 1.6
+        zoom 0.9
+    with dissolve
+
+    show raka formal netral:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
 
     adrian "Indah, bukan?"
     raka "Ya."
@@ -35,7 +44,11 @@ label scene4:
 
     adrian "Ayahmu pembuat sepatu, benar?"
     
-    show raka surprised at left
+    show raka formal terkejut:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
     
     raka "Anda tahu soal itu?"
     
@@ -49,7 +62,11 @@ label scene4:
     adrian "Naiklah."
     adrian "Jadilah orang yang menentukan pasar, bukan dihancurkan pasar."
     
-    show raka neutral at left
+    show raka formal netral:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
     
     raka "...Kenapa saya?"
     

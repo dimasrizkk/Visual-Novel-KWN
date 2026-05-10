@@ -1,5 +1,5 @@
 ## ============================================================
-##  MIRROR — Scene 18B
+##  MIRROR — Scene 18B (Updated Format)
 ##  Judul   : Jaringan Bawah Tanah
 ##  Karakter: Raka, Nara, Pengrajin1, Penjahit, Pak Jaya, Anak
 ##  Latar   : community_hub → community_hub2
@@ -7,52 +7,66 @@
 
 label scene_18b:
 
+    # Membersihkan layar dari karakter scene sebelumnya
     hide nara
     hide raka
+    with dissolve
 
-    scene community_hub
-    with fade
+    scene community_hub with fade
 
     "Nara memimpin jalan melewati pintu belakang bengkel."
     "Lorong sempit menurun ke basement bangunan tua."
     "Bau debu berubah jadi bau kayu, logam panas, dan cat."
 
-    play sound "hammer_echo.ogg"
-    play sound "machine_manual.ogg"
+    # Efek suara lingkungan untuk membangun suasana workshop
+    play sound "hammer_echo.ogg" loop
+    play sound "machine_manual.ogg" loop
 
-    scene community_hub2
+    scene community_hub2 with dissolve
+
+    # Mengganti musik ke tema yang lebih hidup/hangat
+    play music "people_alive.ogg" fadein 2.0
+
+    # Menampilkan Raka dan Nara dengan koordinat presisi
+    show Casual_Terkejut:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    
+    show Eksplor_Netral:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
     with dissolve
-
-    play music "people_alive.ogg"
-
-    show raka casual terkejut at left
-    show nara eksplor netral at right
 
     "Raka berhenti."
     "Ruang besar terbuka di bawah tanah."
-    "Bukan markas bersenjata."
-    "Bukan sarang kriminal."
+    "Bukan markas bersenjata. Bukan sarang kriminal."
     "Workshop."
-    "Puluhan orang bekerja."
-    "Ada yang menjahit tas."
-    "Ada yang memperbaiki mesin kopi."
-    "Ada yang merakit sepeda."
-    "Ada yang mengajari anak kecil menyolder radio."
-    "Suara gaduh."
-    "Berantakan."
-    "Hidup."
+    "Puluhan orang bekerja. Ada yang menjahit tas, memperbaiki mesin kopi, hingga merakit sepeda."
+    "Suara gaduh. Berantakan. Hidup."
 
-    show raka casual netral at left
+    show Casual_Netral:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "...Ini semua masih ada?"
 
-    show nara eksplor senyum at right
+    show Eksplor_Senyum:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     nara "Selama sesuatu berguna, selalu ada yang berusaha menjaganya."
 
+    # Suara latar dari NPC
     pengrajin1 "Nara! Bearing yang lo minta jadi."
 
-    show nara eksplor netral at right
+    show Eksplor_Netral:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     nara "Taruh meja dua."
 
@@ -63,29 +77,32 @@ label scene_18b:
     "Mereka bicara padanya bukan seperti bawahan pada pemimpin."
     "Tapi seperti orang pada orang yang dipercaya."
 
-    show raka casual netral at left
-
     raka "Mereka semua... sembunyi di sini?"
 
-    show nara eksplor serius at right
+    show Eksplor_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     nara "Bertahan."
 
-    show raka casual netral at left
-
     raka "Sama aja."
 
-    show nara eksplor serius at right
-
     nara "Nggak."
-    nara "Sembunyi itu takut dilihat."
-    nara "Bertahan itu nolak hilang."
+    nara "Sembunyi itu takut dilihat. Bertahan itu nolak hilang."
 
-    scene community_hub
+    scene community_hub with dissolve
+
+    show Casual_Netral:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    
+    show Eksplor_Senyum:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
     with dissolve
-
-    show raka casual netral at left
-    show nara eksplor senyum at right
 
     anak "Kak Nara! Bunyi!"
 
@@ -94,41 +111,43 @@ label scene_18b:
     "Tawa anak kecil itu terasa asing."
     "Karena di pusat kota, kebanyakan suara bahagia datang dari speaker."
 
-    show raka casual netral at left
-    show nara eksplor netral at right
+    show Eksplor_Netral:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     raka "Kalau tempat ini ada, kenapa nggak buka aja resmi?"
 
-    show nara eksplor sedih at right
+    show Eksplor_Sedih:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
-    nara "Pernah."
-    nara "Tiga kali."
-    nara "Pertama, izin bahan ditahan."
-    nara "Kedua, inspeksi keamanan mendadak."
-    nara "Ketiga, akun pembayaran dibekukan."
-
-    show raka casual netral at left
+    nara "Pernah. Tiga kali."
+    nara "Pertama, izin bahan ditahan. Kedua, inspeksi keamanan mendadak. Ketiga, akun pembayaran dibekukan."
 
     raka "Kalau kualitas bagus, pasar bakal cari."
 
-    show nara eksplor serius at right
+    show Eksplor_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     nara "Pasar mana?"
 
     "Nara mendekat."
 
-    nara "Yang hasil pencariannya dibayar sponsor?"
-    nara "Yang etalasenya disewa brand besar?"
-    nara "Yang review-nya dibentuk bot?"
+    nara "Yang hasil pencariannya dibayar sponsor? Yang review-nya dibentuk bot?"
     nara "Yang ongkirnya dimurahin kalau barang lewat jalur negara?"
 
-    show raka casual netral at left
+    "Raka ingin menyela. Tak ada celah."
 
-    "Raka ingin menyela."
-    "Tak ada celah."
-
-    show nara eksplor netral at right
-    show raka casual netral at left
+    # Munculnya karakter Pak Jaya (Pengrajin Tua)
+    # Gunakan placeholder jika belum ada aset gambarnya
+    show Eksplor_Netral:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     pengrajin_tua "Nara."
 
@@ -140,15 +159,19 @@ label scene_18b:
 
     pengrajin_tua "Duduk sini."
 
-    "Di meja kayu tua, pria sepuh sedang menjahit sepatu kulit."
-
-    "Gerakan jarinya familiar."
+    "Di meja kayu tua, pria sepuh sedang menjahit sepatu kulit. Gerakan jarinya familiar."
 
     pengrajin_tua "Pernah lihat orang bikin beginian?"
 
-    show raka casual sedih at left
+    show Casual_Sedih:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "...Ayahku."
+
+    # Momen emosional: Menambah poin Loyalty karena koneksi masa lalu
+    $ loyalty += 1
 
     pengrajin_tua "Namanya?"
 
@@ -156,35 +179,36 @@ label scene_18b:
 
     pengrajin_tua "Keras kepala itu."
 
-    show raka casual terkejut at left
+    show Casual_Terkejut:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Bapak kenal?"
 
-    pengrajin_tua "Dia ngajarin gue jahitan silang."
-    pengrajin_tua "Ngamuk kalau ukuran miring setengah senti."
+    pengrajin_tua "Dia ngajarin gue jahitan silang. Ngamuk kalau ukuran miring setengah senti."
 
-    "Ada sesuatu bergerak di dada Raka."
-    "Rasa kehilangan."
-    "Atau rasa ditemukan."
+    "Ada sesuatu bergerak di dada Raka. Rasa kehilangan, atau rasa ditemukan."
 
     pengrajin_tua "Pegang."
 
     "Pak Jaya menyerahkan sepatu setengah jadi."
 
-    show raka casual netral at left
+    show Casual_Netral:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     pengrajin_tua "Berat?"
 
     raka "Lumayan."
 
-    pengrajin_tua "Karena ada tangan di baliknya."
+    pengrajin_tua "Karena ada tangan di baliknya. Barang murah enteng dibawa. Barang bernilai, berat ditanggung."
 
-    "Raka terlihat bingung."
+    "Kalimat itu terdengar kuno. Dan justru karena itu terasa penting."
 
-    pengrajin_tua "Barang murah enteng dibawa."
-    pengrajin_tua "Barang bernilai, berat ditanggung."
-
-    "Kalimat itu terdengar kuno."
-    "Dan justru karena itu terasa penting."
+    # Menghentikan SFX loop sebelum pindah scene
+    stop sound fadeout 1.0
+    stop music fadeout 2.0
 
     jump scene_18c

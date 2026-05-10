@@ -1,139 +1,148 @@
 ## ============================================================
-##  MIRROR — Scene 20C
+##  MIRROR — Scene 20C (Updated Format)
 ##  Judul   : Konfrontasi
 ##  Karakter: Raka, Nara
-##  Latar   : raka_apartement
+##  Latar   : APARTEMEN RAKA
 ##  Flag    : loyalty / ambition / ruthless
 ## ============================================================
 
 label scene_20c:
 
-    scene raka_apartement
+    scene APARTEMEN RAKA with dissolve
+
+    # Menampilkan Raka dan Nara dengan koordinat presisi
+    show Casual_Netral:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    
+    show Eksplor_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
     with dissolve
 
-    show raka casual netral at left
-    show nara eksplor serius at right
+    "Nara melihat sekeliling ruangan dengan teliti."
 
-    "Nara melihat sekitar."
+    nara "Rapih. Kosong."
 
-    nara "Rapih."
-    nara "Kosong."
-
-    show raka casual serius at left
+    show Casual_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "Fungsional."
 
-    show nara eksplor serius at right
+    show Eksplor_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
     nara "Persis kayak sistem yang lo bela."
 
-    show raka casual serius at left
-
     raka "Gue nggak lagi bela siapa-siapa."
 
-    show nara eksplor serius at right
+    "Nara langsung menatap tajam ke arah Raka."
 
-    "Nara langsung menatap."
+    nara "Lo bohong. Dan lo tahu itu."
 
-    nara "Lo bohong."
-    nara "Dan lo tahu itu."
-
-    pause
+    pause 1.0
 
     nara "Gue tahu lo siapa."
 
-    show raka casual terkejut at left
+    show Casual_Terkejut:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "...Apa maksud lo?"
 
+    # SFX Suara tablet dilempar ke meja
     play sound "thud.ogg"
 
-    "Nara melempar tablet ke meja."
-    "Data MIRROR."
-    "Log akses."
-    "Jejak Raka."
+    "Nara melempar tablet ke meja. Layarnya menyala, menampilkan data MIRROR, log akses, dan seluruh jejak digital Raka."
 
-    show nara eksplor serius at right
+    show Eksplor_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
 
-    nara "Kurator Narasi."
-    nara "Divisi MIRROR."
+    nara "Kurator Narasi. Divisi MIRROR."
 
-    "Sunyi."
+    "Sunyi menyelimuti ruangan."
 
-    show raka casual serius at left
+    show Casual_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
 
     raka "...Lo ngikutin gue?"
 
-    show nara eksplor serius at right
-
-    nara "Gue nyambungin titik."
-    nara "Lo terlalu pintar buat nggak mencurigakan."
-
-    show raka casual serius at left
+    nara "Gue nyambungin titik. Lo terlalu pintar buat nggak mencurigakan."
 
     raka "Gue bantu kasih informasi ke lo."
 
-    show nara eksplor serius at right
+    nara "Lo bantu karena lo penasaran. Bukan karena lo peduli."
 
-    nara "Lo bantu karena lo penasaran."
-    nara "Bukan karena lo peduli."
-
-    "Kena lagi."
-
-    show raka casual serius at left
+    "Kena lagi. Argumen Nara menusuk tepat sasaran."
 
     raka "Apa bedanya?"
 
-    show nara eksplor serius at right
+    "Nara melangkah mendekat."
 
-    "Nara mendekat."
-
-    nara "Beda."
-    nara "Orang penasaran berhenti kalau jawabannya bikin dia nggak nyaman."
+    nara "Beda. Orang penasaran berhenti kalau jawabannya bikin dia nggak nyaman."
     nara "Orang peduli tetap lanjut meski hancur."
 
-    pause
+    pause 1.0
 
     nara "Lo yang mana?"
 
+    # Blok interaktif untuk menentukan arah kepribadian Raka
     menu:
         "Apa yang Raka katakan?"
 
         "Jujur soal semuanya":
             $ loyalty += 2
-            show raka casual sedih at left
-            raka "Gue bagian dari sistem itu."
-            raka "Dan gue mulai muak."
-            raka "Tapi gue juga takut."
-            raka "Kalau gue keluar, gue kehilangan segalanya."
-            raka "Kalau gue tetap di dalam, gue kehilangan diri gue."
-            show nara eksplor netral at right
-            "Nara diam."
-            show nara eksplor senyum at right
-            nara "Akhirnya lu jujur."
-            nara "Itu awal yang bagus."
+            show Casual_Sedih:
+                xalign 0.15
+                yalign 1.1
+                zoom 0.85
+            raka "Gue bagian dari sistem itu. Dan gue mulai muak."
+            raka "Tapi gue juga takut. Kalau gue keluar, gue kehilangan segalanya. Kalau gue tetap di dalam, gue kehilangan diri gue."
+            
+            show Eksplor_Senyum:
+                xalign 0.85
+                yalign 1.1
+                zoom 0.85
+            nara "Akhirnya lu jujur. Itu awal yang bagus."
 
         "Setengah bohong":
             $ ambition += 2
-            show raka casual netral at left
-            raka "Gue cuma bagian kecil."
-            raka "Gue nggak tahu semua."
+            show Casual_Netral:
+                xalign 0.15
+                yalign 1.1
+                zoom 0.85
+            raka "Gue cuma bagian kecil. Gue nggak tahu semua."
             raka "Gue cuma coba manfaatin posisi gue."
-            show nara eksplor serius at right
-            "Nara menatap lama."
-            nara "Lo lebih pintar dari itu."
-            nara "Jangan pura-pura bodoh."
+            
+            show Eksplor_Serius:
+                xalign 0.85
+                yalign 1.1
+                zoom 0.85
+            nara "Lo lebih pintar dari itu. Jangan pura-pura bodoh."
 
         "Tujuan menghalalkan cara":
             $ ruthless += 2
-            show raka casual serius at left
-            raka "Kalau sistem busuk, cara bersih nggak akan cukup."
-            raka "Gue pakai apa yang ada."
-            raka "Termasuk sistem itu."
-            show nara eksplor marah at right
-            "Nara dingin."
-            nara "Hati-hati."
-            nara "Kalau lo terlalu lama di dalam lumpur.."
-            nara "lo berhenti sadar lo kotor."
+            show Casual_Serius:
+                xalign 0.15
+                yalign 1.1
+                zoom 0.85
+            raka "Kalau sistem busuk, cara bersih nggak akan cukup. Gue pakai apa yang ada, termasuk sistem itu."
+            
+            show Eksplor_Marah:
+                xalign 0.85
+                yalign 1.1
+                zoom 0.85
+            nara "Hati-hati. Kalau lo terlalu lama di dalam lumpur, lo berhenti sadar lo kotor."
 
     jump scene_20d

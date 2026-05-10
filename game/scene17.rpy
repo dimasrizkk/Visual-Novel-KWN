@@ -2,7 +2,7 @@ label scene17:
     scene mirror_office_morning with fade
     
     # Memutar BGM bernuansa dingin dan analitis
-    play music "audio/cold_data.mp3" fadein 2.0
+    play music cold_data fadein 2.0 #pake 424631__hobotrails__realizing-the-realization.mp3
     
     "Pagi di Divisi MIRROR selalu datang tanpa matahari."
     "Lampu putih menyala lebih dulu daripada langit."
@@ -10,8 +10,12 @@ label scene17:
 
     scene raka_desk with dissolve
     
-    show raka neutral at center
-    
+    show raka formal netral:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
+
     "Raka duduk di tempatnya."
     "Perangkat di tangannya kembali normal."
     "Kalender kerja kembali padat."
@@ -30,6 +34,11 @@ label scene17:
     worker1 "Bro, kampanye sepatu impor lo gila sih."
     worker2 "Naik 31%% seminggu."
     worker1 "Kapan traktir?"
+
+    show raka formal marah:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.4
     
     raka "Kalau kalian berhenti ngomong."
     
@@ -37,10 +46,21 @@ label scene17:
     worker1 "Pantes disayang menteri."
     
     "Mereka tertawa."
+
+    show raka formal senyum:
+        xalign 0.7
+        yalign 1.1
+        zoom 0.4
+
     "Raka ikut tersenyum tipis."
     "Tubuhnya masih hafal cara menyesuaikan diri."
 
     scene monitor_dashboard with dissolve
+    show raka formal netral: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
     
     "Layar utama menampilkan dashboard kota."
     "Angka bergerak. Grafik naik. Warna hijau mendominasi."
@@ -57,7 +77,7 @@ label scene17:
     "Atau disembunyikan cukup rapi."
     
     # SFX Suara ketikan keyboard
-    play sound "audio/keyboard_click.mp3"
+    play sound keyboard_click
     
     "Raka membuka tab yang jarang disentuh pegawai lain."
     
@@ -72,7 +92,12 @@ label scene17:
     system "Optimisme Jangka Panjang: -14%%"
     system "Kesepian Perkotaan: +39%%"
     system "Ketergantungan Konsumsi Emosional: +42%%"
-    
+
+    show raka formal terkejut: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+
     raka "...Apa?"
     
     "Ia memperbesar data."
@@ -82,38 +107,43 @@ label scene17:
     
     raka "Ini nggak mungkin nggak ada yang lihat."
     
-    analyst "Ada yang lihat."
+    show senior analyst: 
+        xalign 0.9
+        yalign 1.3
+        zoom 0.85
+    with dissolve
 
-    scene office_shadow with dissolve
-    show senior_analyst at right
-    
-    analyst "Cuma nggak semua orang dibayar untuk peduli."
-    
+    senior_analyst "Ada yang lihat."
+    senior_analyst "Cuma nggak semua orang dibayar untuk peduli."
+
+    show raka formal netral: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
+
     raka "Kenapa data beginian disimpan kalau nggak dipakai?"
     
-    analyst "Dipakai."
+    senior_analyst "Dipakai."
     
     raka "Buat apa?"
     
-    analyst "Supaya tahu titik lemah berikutnya."
+    senior_analyst "Supaya tahu titik lemah berikutnya."
     
     "Pria itu menyesap kopi dingin."
     
-    analyst "Orang kesepian lebih gampang diarahkan."
-    analyst "Orang yang kehilangan makna lebih gampang beli identitas."
-    analyst "Orang yang capek mikir lebih suka dipilihkan."
+    senior_analyst "Orang kesepian lebih gampang diarahkan."
+    senior_analyst "Orang yang kehilangan makna lebih gampang beli identitas."
+    senior_analyst "Orang yang capek mikir lebih suka dipilihkan."
     
     "Raka menatap layar."
     
     raka "Dan kita nyebut ini pelayanan."
     
-    analyst "Kita nyebut ini pekerjaan."
+    senior_analyst "Kita nyebut ini pekerjaan."
     
     "Pria itu pergi."
-    "Meninggalkan kalimat yang terlalu tenang untuk dilupakan."
-
-    scene monitor_dashboard_close with dissolve
-    
+    "Meninggalkan kalimat yang terlalu tenang untuk dilupakan."    
     "Kursor berkedip di atas file."
     "Untuk pertama kalinya, data di hadapannya tidak terasa seperti angka."
     "Tapi korban."
@@ -141,10 +171,15 @@ label scene17:
             "File terkirim."
             "Jari bergerak lebih cepat dari logika."
 
-    scene raka_desk_back with dissolve
-    
+    scene raka_desk with dissolve
+    show raka formal netral: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve    
+
     # SFX Notifikasi masuk yang mengejutkan
-    play sound "audio/message_ping.mp3"
+    play sound message_ping
     
     system "Undangan rapat evaluasi pukul 20.00."
     system "Pengirim: Kantor Menteri."

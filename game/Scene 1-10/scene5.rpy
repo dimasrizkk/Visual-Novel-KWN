@@ -7,7 +7,11 @@ label scene5:
     "Malam."
     "Apartemen Raka terlalu rapi untuk disebut rumah."
 
-    show raka tired at center
+    show raka formal tired:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
     raka "..."
     
@@ -22,7 +26,9 @@ label scene5:
     
     # Memutar SFX suara kotak dibuka
     play sound box_open
-    
+
+    scene white
+    with Fade(0.1, 0.0, 0.5)
     scene old_shoes with dissolve
     
     "Sepasang sepatu kulit."

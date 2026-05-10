@@ -7,7 +7,11 @@ label scene2:
     "Lantai 77. Gedung Integrasi Narasi Konsumen."
     "Divisi MIRROR."
 
-    show raka neutral at center
+    show raka formal netral:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
     "Di tempat ini, kata-kata lebih tajam dari pisau."
 
@@ -19,7 +23,7 @@ label scene2:
 
     raka "...Baik."
 
-    scene computer_screen with dissolve
+    scene computer_screen with dissolve 
 
     "Kursor berkedip. Sebuah kota menunggu kalimat berikutnya."
 
@@ -45,7 +49,7 @@ label scene2:
     worker "Apa?"
     raka "Tidak ada. Pakai draft pertama."
 
-    scene office_large_screen with dissolve
+    scene office_large_screen with dissolve #bg jg blum ada
 
     system "Kampanye diterima."
     system "Prediksi peningkatan pembelian: 34%%"

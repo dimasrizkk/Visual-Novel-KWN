@@ -1,23 +1,22 @@
 ## ============================================================
-##  MIRROR — Scene 19A
+##  MIRROR — Scene 19A (Updated Format)
 ##  Judul   : Kantor yang Tidak Pernah Gelap
 ##  Karakter: Raka, Adrian
-##  Latar   : nawasa_city_night → minister_room
+##  Latar   : KOTA NAWASENA → minister_room_(adrian)
 ## ============================================================
 
 label scene_19a:
 
-    scene nawasa_city_night
-    with fade
+    scene KOTA NAWASENA with fade
 
-    play music "ominous_clean.ogg"
+    # Memutar BGM bernuansa firasat buruk dengan transisi halus
+    play music "ominous_clean.ogg" fadein 3.0
 
     "Malam di Nawasena tidak pernah benar-benar gelap."
     "Lampu gedung kementerian tetap menyala, seolah pekerjaan tidak mengenal waktu."
     "Atau mungkin, kontrol tidak boleh tidur."
 
-    scene minister_room
-    with dissolve
+    scene minister_room_(adrian) with dissolve
 
     "Langkah Raka menggema di lantai marmer yang terlalu bersih untuk disebut alami."
 
@@ -31,21 +30,33 @@ label scene_19a:
     "Lift transparan naik menembus kota."
     "Dari sini, Nawasena terlihat seperti diagram sempurna."
     "Jalur distribusi. Lampu sinkron. Pola konsumsi."
-    "Semuanya rapi."
-    "Semuanya terkendali."
+    "Semuanya rapi. Semuanya terkendali."
 
-    show raka formal serius at left
+    # Raka muncul dengan pakaian formal
+    show Formal_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
     raka "(dalam hati) Dan semuanya mulai terasa... salah."
 
+    # SFX Ding elevator untuk menandai kedatangan
     play sound "elevator_ding.ogg"
 
     "Pintu terbuka."
-    "Sepi."
-    "Terlalu sepi untuk lantai dengan kekuasaan sebesar ini."
+    "Sepi. Terlalu sepi untuk lantai dengan kekuasaan sebesar ini."
 
-    show adrian jas netral at right
+    # Adrian muncul sebagai antagonis/mentor dengan wibawa tinggi
+    show Jas_Netral:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
     adrian "Masuk saja, Raka."
+
+    # Persiapan transisi musik untuk konfrontasi di scene berikutnya
+    stop music fadeout 2.0
 
     jump scene_19b

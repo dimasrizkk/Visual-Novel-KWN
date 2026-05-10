@@ -1,7 +1,22 @@
 label scene12:
-    scene workshop_corner with dissolve
+    scene workshop_corner with dissolve 
+    show nara bengkel netral: 
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85
+
+    show raka formal netral: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
     
     "Nara kembali bekerja."
+
+    how nara bengkel serius:
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85
+
     "Raka menunggu sambil memandang sekeliling."
     "Tak ada satu pun benda di sini terlihat baru."
     "Namun semuanya terasa lebih hidup dari pusat kota."
@@ -12,15 +27,15 @@ label scene12:
 
         "Sepasang sepatu kulit tua":
             $ loyalty += 1
-            scene shoes_close with dissolve
+            scene shoes_close with dissolve 
             "Jahitannya rapi. Solnya diganti manual."
             "Ia teringat ayahnya."
             raka "..."
 
         "Radio lawas yang masih menyala":
             $ awareness += 1
-            scene radio_close with dissolve
-            
+            scene radio_close with dissolve 
+
             # SFX Suara frekuensi radio tua yang mendengung/statis
             play sound radio_static
             
@@ -30,12 +45,21 @@ label scene12:
 
         "Mesin kopi manual":
             $ ambition += 1
-            scene coffee_manual with dissolve
+            scene coffee_manual with dissolve 
             raka "Masih ada yang pakai beginian?"
             nara "Masih ada yang suka cara tradisional, bukan seperti orang malas yang tinggal tekan tombol."
 
-    scene ruang_sisa_inside with dissolve
-    
+    scene workshop_corner with dissolve
+    show raka formal netral: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+
+    show nara bengkel serius:
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85    
+
     raka "Kau simpan semua barang rongsokan kota di sini?"
     
     nara "Salah."

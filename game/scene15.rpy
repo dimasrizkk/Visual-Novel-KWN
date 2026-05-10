@@ -1,6 +1,18 @@
 label scene15:
+    scene workshop_corner with dissolve
+
+    show raka formal netral: 
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+
+    show nara bengkel netral:
+        xalign 0.95
+        yalign 1.6
+        zoom 0.85
+
     # SFX suara perangkat elektronik melakukan reboot/restart
-    play sound "audio/device_reboot.mp3"
+    play sound device_reboot
     
     nara "Selesai."
     
