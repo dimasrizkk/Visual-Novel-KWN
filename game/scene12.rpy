@@ -1,5 +1,5 @@
 label scene12:
-    scene workshop_corner with dissolve #bg blum ada
+    scene workshop_corner with dissolve 
     show nara bengkel netral: 
         xalign 0.95
         yalign 1.6
@@ -27,15 +27,15 @@ label scene12:
 
         "Sepasang sepatu kulit tua":
             $ loyalty += 1
-            scene shoes_close with dissolve # blum ada bg
+            scene shoes_close with dissolve 
             "Jahitannya rapi. Solnya diganti manual."
             "Ia teringat ayahnya."
             raka "..."
 
         "Radio lawas yang masih menyala":
             $ awareness += 1
-            scene radio_close with dissolve # blum ada bg
-            
+            scene radio_close with dissolve 
+
             # SFX Suara frekuensi radio tua yang mendengung/statis
             play sound radio_static
             
@@ -45,7 +45,7 @@ label scene12:
 
         "Mesin kopi manual":
             $ ambition += 1
-            scene coffee_manual with dissolve # blum ada bg
+            scene coffee_manual with dissolve 
             raka "Masih ada yang pakai beginian?"
             nara "Masih ada yang suka cara tradisional, bukan seperti orang malas yang tinggal tekan tombol."
 
