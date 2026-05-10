@@ -289,61 +289,31 @@ style quick_button_text:
 ## to other menus, and to start the game.
 
 screen navigation():
-
     vbox:
         style_prefix "navigation"
-
         xpos gui.navigation_xpos
         yalign 0.5
-
         spacing gui.navigation_spacing
 
-        if main_menu:
-
-            textbutton _("Start") action Start()
-
-        else:
-
+        if not main_menu:
             textbutton _("History") action ShowMenu("history")
-
             textbutton _("Save") action ShowMenu("save")
 
         textbutton _("Load") action ShowMenu("load")
-
         textbutton _("Preferences") action ShowMenu("preferences")
 
         if _in_replay:
-
             textbutton _("End Replay") action EndReplay(confirm=True)
-
         elif not main_menu:
-
             textbutton _("Main Menu") action MainMenu()
 
         textbutton _("About") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
             textbutton _("Help") action ShowMenu("help")
 
         if renpy.variant("pc"):
-
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
             textbutton _("Quit") action Quit(confirm=not main_menu)
-
-
-style navigation_button is gui_button
-style navigation_button_text is gui_button_text
-
-style navigation_button:
-    size_group "navigation"
-    properties gui.button_properties("navigation_button")
-
-style navigation_button_text:
-    properties gui.text_properties("navigation_button")
-
 
 ## Main Menu screen ############################################################
 ##
@@ -352,31 +322,58 @@ style navigation_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
-
-    ## This ensures that any other menu screen is replaced.
     tag menu
+    style_prefix "main_menu"
 
     add gui.main_menu_background
 
-    ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    # Tombol Start
+    imagebutton:
+        idle "gui/image_button/start_idle.png"
+        hover "gui/image_button/start_hover.png"
+        action Start()
+        xpos 877 ypos 399
+        focus_mask True
 
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
-    use navigation
+    # Tombol Load
+    imagebutton:
+        idle "gui/image_button/load_idle.png"
+        hover "gui/image_button/load_hover.png"
+        action ShowMenu("load")
+        xpos 877 ypos 465
+        focus_mask True
 
-    if gui.show_name:
+    # Tombol Settings (Preferences)
+    imagebutton:
+        idle "gui/image_button/settings_idle.png"
+        hover "gui/image_button/settings_hover.png"
+        action ShowMenu("preferences")
+        xpos 877 ypos 530
+        focus_mask True
 
-        vbox:
-            style "main_menu_vbox"
+    # Tombol About
+    imagebutton:
+        idle "gui/image_button/about_idle.png"
+        hover "gui/image_button/about_hover.png"
+        action ShowMenu("about")
+        xpos 877 ypos 596
+        focus_mask True
 
-            text "[config.name!t]":
-                style "main_menu_title"
+    # Tombol Help
+    imagebutton:
+        idle "gui/image_button/help_idle.png"
+        hover "gui/image_button/help_hover.png"
+        action ShowMenu("help")
+        xpos 877 ypos 662
+        focus_mask True
 
-            text "[config.version]":
-                style "main_menu_version"
-
+    # Tombol Quit
+    imagebutton:
+        idle "gui/image_button/quit_idle.png"
+        hover "gui/image_button/quit_hover.png"
+        action Quit(confirm=not main_menu)
+        xpos 877 ypos 727
+        focus_mask True
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -387,8 +384,6 @@ style main_menu_version is main_menu_text
 style main_menu_frame:
     xsize 420
     yfill True
-
-    background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -420,10 +415,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     style_prefix "game_menu"
 
-    if main_menu:
-        add gui.main_menu_background
-    else:
-        add gui.game_menu_background
+    add gui.game_menu_background
 
     frame:
         style "game_menu_outer_frame"
@@ -503,8 +495,6 @@ style return_button_text is navigation_button_text
 style game_menu_outer_frame:
     bottom_padding 45
     top_padding 180
-
-    background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
     xsize 420
