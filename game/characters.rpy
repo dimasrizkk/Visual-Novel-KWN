@@ -41,6 +41,7 @@ define ibu = Character("Ibu")
 define nara = Character("Nara") #deklarasi utk scene 11
 define penyiar = Character("Penyiar Radio", what_italic=True) #deklarasi utk scene 12
 define analyst = Character("Senior Analyst") #deklarasi utk scene 17
+define guard_core = Character("Penjaga_Core_Mirror")
 
 #default loyalty   = 0
 #default awareness = 0
