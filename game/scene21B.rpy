@@ -31,3 +31,37 @@ label scene21B:
 
         "Kacau." 
         "Rak jatuh."
+
+        "Barang berserakan." 
+        "Beberapa alat masih panas." 
+        "Seolah semua orang pergi terburu-buru." 
+
+        sound "distant_footsteps.ogg" 
+
+        nara (offscreen) "Raka!" 
+
+        scene back_exit 
+        with dissolve 
+
+        show nara tense at center 
+        
+        nara "Lo datang." 
+        raka "Apa yang terjadi?" 
+        nara "Mereka nggak serbu langsung." 
+        nara "Mereka matiin akses dulu." 
+        nara "Bekuin transaksi." 
+        nara "Ganggu komunikasi." 
+        nara "Bikin kita panik." 
+        raka "Klasik." 
+        nara "Efektif." 
+
+        sound "metal_door_bang.ogg" 
+        "Suara keras dari atas." 
+
+        nara "...Mereka di sini." 
+        "Bukan tentara." 
+        "Bukan polisi biasa." 
+        "Unit penertiban sistem." 
+        "Lebih cepat." 
+        "Lebih diam." 
+        "Lebih tidak terlihat."
