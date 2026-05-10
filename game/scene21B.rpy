@@ -65,3 +65,5 @@ label scene21B:
         "Lebih cepat." 
         "Lebih diam." 
         "Lebih tidak terlihat."
+
+    return
