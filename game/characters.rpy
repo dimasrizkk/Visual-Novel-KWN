@@ -43,6 +43,14 @@ define penyiar = Character("Penyiar Radio", what_italic=True) #deklarasi utk sce
 define analyst = Character("Senior Analyst") #deklarasi utk scene 17
 define guard_core = Character("Penjaga_Core_Mirror")
 
+# Tambahkan ini di characters.rpy
+define guard = Character("Guard", color="#7f8c8d")
+define ad_voice = Character("System Voice", color="#00e5ff", what_italic=True)
+define data_voice = Character("Data Stream", color="#00e5ff", what_italic=True)
+define countdown = Character(None, what_size=50, what_xalign=0.5, what_yalign=0.5)
+define radio = Character("Radio", color="#f7c59f", what_italic=True)
+define text_on_screen = Character(None, what_size=40, what_color="#ffffff")
+
 #default loyalty   = 0
 #default awareness = 0
 #default ambition  = 0

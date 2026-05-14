@@ -164,3 +164,9 @@ image pak jaya = "assets/character/karakter_tambahan/Pak_Jaya_Pengrajin_Sepatu.p
 image guard core = "assets/character/karakter_tambahan/Penjaga_Core_Mirror.png"
 image senior analyst = "assets/character/karakter_tambahan/Senior_Data_Analyst.png"
 image pengrajin bawah = "assets/character/karakter_tambahan/Pengrajin_Bawah_Tanah.png"
+
+
+# Untuk Sprite yang tidak ada, kamu bisa melakukan mapping sederhana:
+image adrian calm = "assets/character/adrian_wiratma/kostum_jas/Jas_Netral.png"
+image raka tired = "assets/character/raka_pradana/kostum_formal/Formal_Tired.png"
+image nara calm = "assets/character/nara_wisesa/kostum_bengkel/Bengkel_Netral.png"
