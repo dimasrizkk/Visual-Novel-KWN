@@ -87,6 +87,8 @@ define gui.notify_text_size = 24
 ## The size of the game's title.
 define gui.title_text_size = 75
 
+#DEFINE TEXTBOX
+define gui.textbox_background = "gui/textbox.png"
 
 ## Main and Game Menus #########################################################
 
