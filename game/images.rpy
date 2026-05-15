@@ -42,10 +42,13 @@ image mirror_office_morning = im.Scale("assets/background/KANTOR MIRROR (PUSAT O
 image city_night_hologram = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
 image street_modern = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
 image roadside_people = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
+image city_screens = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
 
 # 12. KOTA SAAT CHAOS.jpg
 image city_chaos = im.Scale("assets/background/KOTA SAAT CHAOS.jpg", 1920, 1080)
 image chaos_city = im.Scale("assets/background/KOTA SAAT CHAOS.jpg", 1920, 1080)
+image blackout_city = im.Scale("assets/background/KOTA SAAT CHAOS.jpg", 1920, 1080)
+image distant_city_ruin = im.Scale("assets/background/KOTA SAAT CHAOS.jpg", 1920, 1080)
 
 # 13. minister_room_(adrian).png
 image minister_room = im.Scale("assets/background/minister_room_(adrian).png", 1920, 1080)
@@ -53,6 +56,8 @@ image minister_room = im.Scale("assets/background/minister_room_(adrian).png", 1
 # 14. MIRROR PUSAT KENDALI.jpg
 image core_main = im.Scale("assets/background/MIRROR PUSAT KENDALI.jpg", 1920, 1080)
 image ministry_control_room = im.Scale("assets/background/MIRROR PUSAT KENDALI.jpg", 1920, 1080)
+image core_main_alert = im.Scale("assets/background/MIRROR PUSAT KENDALI.jpg", 1920, 1080)
+image core_overload = im.Scale("assets/background/MIRROR PUSAT KENDALI.jpg", 1920, 1080)
 
 image computer_screen = im.Scale("assets/background/computer_screen.jpg", 1920, 1080)
 image monitor_dashboard = im.Scale("assets/background/computer_screen.jpg", 1920, 1080)
@@ -72,12 +77,17 @@ image raka_crowd = im.Scale("assets/background/raka_crowd.png", 1920, 1080)
 image adrian_stage_close = im.Scale("assets/background/adrian_stage_close.png", 1920, 1080)
 
 image workshop_corner = im.Scale("assets/background/workshop_corner.jpg", 1920, 1080)
+image hidden_base = im.Scale("assets/background/workshop_corner.jpg", 1920, 1080)
+image small_workshop = im.Scale("assets/background/workshop_corner.jpg", 1920, 1080)
+
 image quiet_bench = im.Scale("assets/background/workshop_corner.jpg", 1920, 1080)
 
 image shoes_close = im.Scale("assets/background/shoes_close.jpg", 1920, 1080)
 image radio_close = im.Scale("assets/background/radio_close.jpg", 1920, 1080)
 image coffee_manual = im.Scale("assets/background/coffee_manual.jpg", 1920, 1080)
 image workshop_tension = im.Scale("assets/background/workshop_tension.jpg", 1920, 1080)
+
+image kota_good_ending = im.Scale("assets/background/NAWASENA GOOD ENDING (GAMBAR 1).jpg", 1920, 1080)
 
 #adrian jas
 image adrian jas marah= "assets/character/adrian_wiratma/kostum_jas/Jas_Marah.png"
@@ -161,7 +171,7 @@ image penjaga gerbang = "assets/character/karakter_tambahan/Penjaga_Gerbang.png"
 image worker_npc = "assets/character/karakter_tambahan/Worker.png"
 image ayah arman = "assets/character/karakter_tambahan/Arman_Pradana_(Ayah_Raka).png"
 image pak jaya = "assets/character/karakter_tambahan/Pak_Jaya_Pengrajin_Sepatu.png"
-image guard core = "assets/character/karakter_tambahan/Penjaga_Core_Mirror.png"
+image guard = "assets/character/karakter_tambahan/Penjaga_Core_Mirror.png"
 image senior analyst = "assets/character/karakter_tambahan/Senior_Data_Analyst.png"
 image pengrajin bawah = "assets/character/karakter_tambahan/Pengrajin_Bawah_Tanah.png"
 
