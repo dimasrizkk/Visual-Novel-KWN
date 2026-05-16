@@ -1,11 +1,3 @@
-## ============================================================
-##  MIRROR — Scene 21B (Updated Format)
-##  Judul   : Ruang Sisa dalam Bahaya
-##  Karakter: Raka, Nara
-##  Latar   : alley_run → ruang_sisa_outside_dark → ruang_sisa_inside_chaos → back_exit
-##  Catatan : Kondisional jalur aktif (active_path)
-## ============================================================
-
 label scene21b:
 
     if active_path >= 1:
