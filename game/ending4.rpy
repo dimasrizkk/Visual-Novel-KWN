@@ -1,235 +1,243 @@
 label ending_golden_silence: 
 
-    scene core_main 
-    with fade 
+    scene core_main with fade 
 
-    play music "empty_victory.ogg" 
+    # Memutar BGM kemenangan yang terasa hampa
+    play music "empty_victory.ogg" fadein 2.0 
 
     "Raka mundur." 
     "Satu langkah." 
-    "Cukup untuk mengubah segalanya." 
+    "Satu langkah mundur yang cukup untuk mengubah seluruh arah masa depan." 
 
-    pause 
+    pause 1.0 
 
-    show nara shocked 
-    show raka at left 
+    # Menampilkan Nara dan Raka berdampingan dalam ketegangan
+    show Eksplor_Shocked:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
+    
+    show Casual_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
-    "nara menatap" 
+    "Nara menatap Raka dengan tatapan tidak percaya." 
 
-    nara "…serius?" 
+    nara "…Serius?" 
 
-    pause 
+    pause 1.0 
 
-    "nara tertawa kecil" 
+    show Eksplor_Shocked:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
+
+    "Nara tertawa kecil. Terdengar hambar." 
 
     nara "Gue kira…" 
 
-    pause 
+    pause 1.0 
 
-    nara "lo beda dari sistem." 
+    nara "Lo beda dari sistem." 
 
-    pause 2.0 # pause panjang 
+    pause 2.0 
 
-    "raka tidak menjawab" 
+    raka "..." 
 
-    "nara menatap lama" 
+    "Nara menatap wajah Raka untuk waktu yang lama, mencari sisa-sisa nurani." 
 
     nara "Ternyata lo cuma bagian paling lembutnya." 
 
-    scene guard_enter 
-    with flash 
+    scene guard_enter with flash 
 
+    # SFX Dobrakan pintu oleh Unit Penertiban
     play sound "door_break.ogg" 
 
     guard "Amankan target!" 
 
-    "Nara ditarik paksa." 
-    "nara tidak melawan, tidak berteriak, hanya menatap Raka." 
+    "Nara ditarik paksa oleh unit bersenjata." 
+    "Ia tidak melawan, tidak berteriak. Ia hanya terus menatap lurus ke arah Raka." 
 
-    nara "Hebat kamu ya Raka" 
+    nara "Hebat kamu ya, Raka." 
 
-    pause 
+    pause 1.0 
 
     nara "Lu selalu berpura-pura." 
-    nara "Nikmati pilihanlu Raka." 
+    nara "Nikmati pilihan lu, Raka." 
 
-    scene nara_taken 
-    with fade 
+    scene nara_taken with fade 
 
     "Dan begitu saja…" 
-    "ia hilang." 
+    "Ia hilang ditelan lorong kegelapan kementerian." 
 
-    pause 2.0 # pause panjang 
+    pause 2.0 
 
-    raka (dalam hati) "Ini pilihanku." 
-    raka (dalam hati) "Ini… harusnya benarkan?" 
+    raka "(dalam hati) Ini pilihanku." 
+    raka "(dalam hati) Ini… harusnya bener kan?" 
 
-    # TRANSISI — KOTA MENJADI “SEMPURNA” 
-    scene city_perfect 
-    with fade 
+    ## ── TRANSISI — KOTA MENJADI “SEMPURNA” ──
+    scene city_perfect with fade 
 
-    play music "controlled_peace.ogg" 
+    # Mengubah BGM ke tema kedamaian yang terkontrol secara paksa
+    play music "controlled_peace.ogg" fadein 3.0 
 
     "Beberapa waktu kemudian." 
-    "Kota menjadi lebih rapi." 
-    "Lebih tenang." 
-    "Lebih efisien." 
-    "Tidak ada protes. Tidak ada gangguan. Tidak ada… arah lain." 
+    "Kota menjadi jauh lebih rapi. Lebih tenang. Lebih efisien." 
+    "Tidak ada protes. Tidak ada gangguan. Tidak ada… ruang untuk arah lain." 
 
-    pause 
+    pause 1.0 
 
-    "Semuanya berjalan." 
-    "Persis seperti yang diinginkan sistem." 
+    "Semuanya berjalan. Persis seperti apa yang telah dirancang oleh algoritma sistem." 
 
-    # RAKA MENJADI ELITE 
-    scene elite_office 
-    with dissolve 
+    ## ── RAKA MENJADI ELITE ──
+    scene elite_office with dissolve 
 
-    show raka_suit at center 
+    # Raka muncul dengan pakaian formal naik pangkat (Kurator Utama)
+    show Formal_Serius:
+        xalign 0.5
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
-    "Raka naik." 
-    "Lebih cepat dari yang ia bayangkan." 
-    "Lebih tinggi dari yang pernah ia impikan." 
+    "Raka naik jabatan." 
+    "Lebih cepat dari yang pernah ia bayangkan. Lebih tinggi dari yang pernah ia impikan." 
 
     system "Status: Kurator Utama MIRROR" 
     system "Akses penuh diberikan." 
 
-    pause 
+    pause 1.0 
 
-    "raka duduk perlahan di kursi besar" 
-
+    # SFX Duduk di kursi kerja besar
     play sound "chair_sit.ogg" 
 
-    raka (dalam hati) "Aman." 
+    "Raka duduk perlahan di kursi kebesaran barunya." 
 
-    pause 
+    raka "(dalam hati) Aman." 
 
-    raka (dalam hati) "Semua… aman." 
+    pause 1.0 
 
-    pause 
+    raka "(dalam hati) Semua… aman." 
 
-    # IRONI — NARASI TETAP BERJALAN 
-    scene billboard 
-    with dissolve 
+    ## ── IRONI — NARASI TETAP BERJALAN ──
+    scene billboard with dissolve 
 
-    "Narasi tetap berjalan." 
-    "Lebih halus. Lebih kuat. Lebih tidak terasa." 
+    "Narasi kota tetap berjalan secara berkala." 
+    "Lebih halus. Lebih kuat. Lebih tidak terasa memanipulasi." 
 
     text_on_screen "Produk lokal = tidak relevan" 
 
-    pause 
+    pause 1.0 
 
-    "raka melihat layar" 
+    "Raka melihat layar monitornya." 
 
-    raka (dalam hati) "Gue menang…" 
+    raka "(dalam hati) Gue menang…" 
 
-    pause 2.0 # pause panjang 
+    pause 2.0 
 
-    raka (dalam hati) "iyakan?" 
+    raka "(dalam hati) ...Iya kan?" 
 
-    # KUNJUNGAN TERAKHIR — RUANG SISA 
-    scene ruang_sisa_demolition 
-    with fade 
+    ## ── KUNJUNGAN TERAKHIR — RUANG SISA ──
+    scene ruang_sisa_demolition with fade 
 
-    play music "lonely.ogg" 
+    # Mengubah BGM ke tema kesepian dan reruntuhan kenangan
+    play music "lonely.ogg" fadein 2.5 
 
     "Beberapa hari kemudian." 
-    "Raka datang kembali." 
-    "Untuk terakhir kalinya." 
+    "Raka datang kembali ke lantai bawah tanah itu. Untuk yang terakhir kalinya." 
 
-    scene ruang_sisa_empty 
-    with dissolve 
+    scene ruang_sisa_empty with dissolve 
 
-    "Ruang Sisa… kosong." 
-    "Tidak ada suara mesin. Tidak ada cahaya hangat. Hanya debu." 
+    "Ruang Sisa… kini sepenuhnya kosong." 
+    "Tidak ada lagi suara deru mesin. Tidak ada cahaya hangat. Hanya debu yang beterbangan." 
 
-    pause 
+    pause 1.0 
 
-    "raka berjalan pelan, setiap langkah bergema" 
+    "Raka berjalan pelan, setiap hentakan langkah kakinya bergema di dinding yang sepi." 
 
-    raka (dalam hati) "Dulu tempat ini… hidup." 
+    raka "(dalam hati) Dulu tempat ini… hidup." 
 
-    pause 
+    ## ── RADIO (SISA TERAKHIR NARA) ──
+    scene old_radio with dissolve 
 
-    # RADIO (SISA TERAKHIR NARA) 
-    scene old_radio 
-    with dissolve 
-
+    # SFX Statik radio tua yang mendadak menyala
     play sound "radio_static.ogg" 
 
-    radio "…kalau lo denger ini…" 
+    radio "…Kalau lo denger ini…" 
 
-    pause 
+    pause 1.0 
 
-    radio "gue harap lo milih sesuatu." 
+    radio "Gue harap lo milih sesuatu." 
 
-    pause 2.0 # pause panjang 
+    pause 2.0 
 
-    radio "bukan, nunggu sampai semuanya dipilihin buat lo." 
+    radio "Bukan nunggu sampai semuanya dipilih-pilihin buat lo." 
 
-    pause 
+    pause 1.0 
 
-    "raka diam, tidak menyentuh radio" 
+    "Raka hanya diam terpaku, tangannya sama sekali tidak bergerak untuk menyentuh radio itu." 
 
-    raka (dalam hati) "Aku udah memilih." 
+    raka "(dalam hati) Aku udah memilih." 
 
-    pause 
+    pause 1.0 
 
-    raka (dalam hati) "dan sepertinya pilihanku salah ya Nar?" 
+    raka "(dalam hati) ...Dan sepertinya pilihanku salah ya, Nar?" 
 
-    # PEMBONGKARAN TEMPAT 
+    ## ── PEMBONGKARAN TEMPAT ──
+    # SFX Suara alat berat mulai bekerja di luar gedung
     play sound "machine_start.ogg" 
 
-    "Suara mesin dari luar." 
-    "Proyek pembangunan." 
-    "Zona ini akan ‘dimodernisasi’." 
+    "Suara bising mesin terdengar keras dari arah luar." 
+    "Sebuah proyek pembangunan baru saja dimulai. Zona ini akan segera ‘dimodernisasi’." 
 
-    pause 
+    pause 1.0 
 
-    scene demolition_begin 
-    with dissolve 
+    scene demolition_begin with dissolve 
 
-    "Dinding mulai dihancurkan." 
-    "Kenangan tidak dipindahkan. Tidak disimpan. Hanya… dihapus." 
+    "Dinding penopang mulai dihancurkan." 
+    "Kenangan di tempat ini tidak dipindahkan, tidak disimpan. Hanya… dihapus secara permanen." 
 
-    pause 
+    pause 1.0 
 
-    "raka berdiri, tidak bergerak, tidak menghentikan" 
+    "Raka berdiri tegak. Tidak bergerak, tidak melakukan apa pun untuk menghentikannya." 
 
-    # MOMEN TERAKHIR 
-    raka (dalam hati) "Kalau gue berhenti sekarang…" 
+    raka "(dalam hati) Kalau gue berhenti sekarang…" 
 
-    pause 
+    pause 1.0 
 
-    raka (dalam hati) "apa yang berubah Nar?" 
+    raka "(dalam hati) ...Apa yang bakal berubah, Nar?" 
 
-    pause 2.0 # pause panjang 
+    pause 2.0 
 
-    "raka berbalik, berjalan keluar tanpa melihat ke belakang" 
+    "Raka membalikkan tubuhnya, berjalan melangkah keluar tanpa menoleh ke belakang lagi." 
 
-    # FINAL SHOT 
-    scene city_screens 
-    with fade 
+   ## ── FINAL SHOT ──
+    scene city_screens with fade 
 
-    play music "empty_victory.ogg" 
+    # Mengembalikan BGM hampa utama di akhir layar
+    play music "empty_victory.ogg" fadein 2.0 
 
-    "Kota bersinar." 
-    "Lebih terang dari sebelumnya. Lebih sempurna. Lebih… kosong." 
+    "Kota Nawasena bersinar sangat benderang." 
+    "Lebih terang dari sebelum-sebelumnya. Lebih sempurna. Dan terasa jauh lebih… kosong." 
 
-    pause 
+    pause 1.0 
 
-    scene raka_reflection 
-    with dissolve 
+    scene raka_reflection with dissolve 
 
-    "Dan di tengah semua itu… ada seseorang yang mendapatkan semua yang ia inginkan." 
+    "Dan di tengah gemerlap kepalsuan itu… ada seseorang yang berhasil mendapatkan semua hal yang ia inginkan." 
 
-    pause 
+    pause 1.0 
 
-    "Dan kehilangan satu-satunya hal yang membuatnya berarti." 
+    "Sekaligus kehilangan satu-satunya hal yang membuat hidupnya berarti." 
 
-    scene black 
-    with fade 
+    scene black with fade 
 
+    # Teks judul penutup rute cerita
     "END — GOLDEN SILENCE" 
+
+    # Menghentikan seluruh trek suara saat game ditutup
+    stop music fadeout 3.0
+    stop sound fadeout 1.0
 
     return
