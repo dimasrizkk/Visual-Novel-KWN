@@ -12,7 +12,7 @@ label scene12:
     
     "Nara kembali bekerja."
 
-    how nara bengkel serius:
+    show nara bengkel serius:
         xalign 0.95
         yalign 1.6
         zoom 0.85
