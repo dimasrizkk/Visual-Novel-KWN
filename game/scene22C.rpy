@@ -1,11 +1,20 @@
-label scene_22c_pertemuan:
+label scene22C:
 
     scene hidden_base 
     with fade 
     play music "quiet_tension.ogg" 
     
-    show nara serious at right 
-    show raka at left 
+    show nara eksplor  serius:
+        xalign 0.9
+        yalign 1.6
+        zoom 0.9
+    with dissolve
+
+    show raka rebel serius:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
 
     "Tempat baru." 
     "Lebih kecil." 

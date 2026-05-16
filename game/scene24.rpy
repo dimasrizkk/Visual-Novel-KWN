@@ -1,12 +1,16 @@
-label scene_24_penjaga_core:
+label scene24:
 
     scene core_corridor 
     with fade 
     play music "tension.ogg" 
     
-    show guard_core at center 
-    
-    guard_core "Berhenti." 
+    show guard: 
+        xalign 0.5
+        yalign 1.1
+        zoom 0.9
+    with dissolve
+
+    guard "Berhenti." 
     nara "Kita nggak punya waktu." 
     raka "Kita nggak punya pilihan." 
     
@@ -26,8 +30,7 @@ label scene_24_penjaga_core:
     pause 
 
     menu:
-        "Apa yang dilakukan Raka?":
-            pass
+        "Apa yang dilakukan Raka?" 
 
         "Ambil pistol":
             $ has_gun = True 

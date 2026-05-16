@@ -11,7 +11,7 @@ label ending_true:
     system "Unit penertiban dikerahkan." 
     system "Estimasi waktu: 90 detik." 
 
-    scene core_lights_red 
+    scene core_lights_red #bg blum ada
     with dissolve 
 
     "Lampu berubah merah." 
@@ -24,9 +24,23 @@ label ending_true:
 
     pause 
 
-    show adrian calm at center 
-    show raka at left 
-    show nara at right 
+    show adrian kantor netral: 
+        xalign 0.5
+        yalign 1.1  
+        zoom 0.85
+    with dissolve
+
+    show raka rebel serius:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
+
+    show nara eksplor serius:
+        xalign 1.0
+        yalign 1.6
+        zoom 0.9
+    with dissolve
 
     "adrian tetap tenang" 
 
@@ -67,6 +81,12 @@ label ending_true:
 
     adrian "Ingatlah Raka, saat mereka panik…" 
 
+    show adrian kantor senyum: 
+        xalign 0.5
+        yalign 1.1  
+        zoom 0.85
+    with dissolve
+
     "adrian sedikit tersenyum" 
 
     adrian "mereka akan Kembali mencari stabilitas." 
@@ -77,10 +97,10 @@ label ending_true:
     adrian "Nama yang mereka benci hari ini" 
     adrian "Akan menjadi satu-satunya nama yang mereka ingat untuk menyelamatkan mereka dari kekacauan semua ini." 
 
-    raka diam 
+    #raka diam 
 
-    raka (dalam hati) "Apa dia tidak takut?" 
-    raka (dalam hati) "Apa dia menunggu momen ini." 
+    raka "(Apa dia tidak takut?)" 
+    raka "(Apa dia menunggu momen ini)" 
 
     nara "Raka, jangan dengarkan dia!" 
     nara "Ini bukan soal dia RAKA!" 
@@ -89,8 +109,20 @@ label ending_true:
     system "30 detik menuju intervensi paksa." 
 
     # AKSI RAKA — BROADCAST 
-    scene core_overload 
+    scene core_overload #bg blum ada
     with flash 
+
+    show raka rebel serius:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
+
+    show nara eksplor serius:
+        xalign 1.0
+        yalign 1.6
+        zoom 0.9
+    with dissolve
 
     play music "uprising.ogg" 
 
@@ -141,20 +173,43 @@ label ending_true:
     pause 
 
     # GUARD MASUK 
-    scene core_breach 
+    scene core_breach #bg blum ada
     with flash 
+
+    show raka rebel serius:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
+
+    show nara eksplor serius:
+        xalign 1.0
+        yalign 1.6
+        zoom 0.9
+    with dissolve
 
     play sound "door_break.ogg" 
 
     "Pintu jebol." 
 
+    show guard: 
+        xalign 0.5
+        yalign 1.1
+        zoom 0.9
+    with dissolve
+
     guard "Amankan mereka!" 
+
+    show nara eksplor marah:
+        xalign 1.0
+        yalign 1.6
+        zoom 0.9    
 
     nara "Kita harus pergi sekarang RAKA!" 
 
     "raka masih melihat layar" 
 
-    raka (dalam hati) "Inilah pilihan yang telah aku buat" 
+    raka "(Inilah pilihan yang telah aku buat)"
 
     "adrian tetap berdiri" 
     "tidak melawan" 
@@ -205,8 +260,17 @@ label ending_true:
     "Tanpa diarahkan." 
 
     # RAKA & NARA 
-    show nara calm 
-    show raka tired 
+    show nara eksplor netral:
+        xalign 1.0
+        yalign 1.6
+        zoom 0.9 
+    with dissolve
+
+    show raka rebel serius:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
 
     raka "Ini bukan kemenangan ya?" 
     nara "Emang bukan." 
@@ -215,7 +279,7 @@ label ending_true:
     pause 
 
     # ADRIAN (DITANGKAP) 
-    scene adrian_arrest 
+    scene adrian_arrest #bg blum ada
     with dissolve 
 
     guard "Target diamankan." 
@@ -240,10 +304,10 @@ label ending_true:
     adrian "Karena ketika mereka sudah lelah…" 
     adrian "mereka akan kembali mencari seseorang seperti aku." 
 
-    scene black 
+    scene kota_good_ending 
     with fade 
 
-    "Scene menunjukan warga yang Kembali membangun sektor lama yang sudah dibersihkan, membuka berbagai toko lama, pasar Kembali ramai, toko-toko local bermunculan dan membuat produk-produk dan dipakai masyrakat, billboard menampilkan berbagai produk local, banyak mural yang menulis “ANTI MIRROR” dan disebelahnya banyak pedagang tradisional di kerubungi pembeli." 
+    "Warga kembali membangun sektor lama yang sudah dibersihkan, membuka berbagai toko lama, pasar Kembali ramai, toko-toko local bermunculan dan membuat produk-produk dan dipakai masyrakat, billboard menampilkan berbagai produk local, banyak mural yang menulis “ANTI MIRROR” dan disebelahnya banyak pedagang tradisional di kerubungi pembeli." 
 
     scene black 
     with fade 

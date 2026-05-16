@@ -11,16 +11,30 @@ label ending_chaos:
     system "Stabilitas jaringan menurun." 
     system "Kegagalan sistem berantai terdeteksi." 
 
-    scene core_lights_flicker 
+    scene core_lights_flicker #bg blum ada
     with dissolve 
 
     "Lampu berkedip." 
     "Data mulai tidak sinkron." 
     "Sistem yang selama ini terlihat sempurna… mulai retak." 
 
-    show nara tense 
-    show raka determined 
-    show adrian calm 
+    show nara eksplor serius:
+        xalign 1.0
+        yalign 1.6
+        zoom 0.9
+    with dissolve
+    
+    show raka rebel serius:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
+
+    show adrian kantor netral: 
+        xalign 0.5
+        yalign 1.1  
+        zoom 0.85
+    with dissolve
 
     nara "Raka… lo yakin?" 
 
@@ -57,8 +71,23 @@ label ending_chaos:
     raka "TIDAKK, gua tau dan ini sudah telat." 
 
     # AKSI — HANCURKAN CORE 
-    scene core_destroy 
+    scene core_destroy #bg blum ada
     with flash 
+
+    show nara eksplor serius:
+        xalign 1.0
+        yalign 1.6
+        zoom 0.9
+    
+    show raka rebel serius:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+
+    show adrian kantor senyum: 
+        xalign 0.5
+        yalign 1.1  
+        zoom 0.85
 
     play sound "system_break.ogg" 
     play music "collapse.ogg" 
@@ -76,6 +105,12 @@ label ending_chaos:
 
     # Implementasi Poin 2: Tensi Visual dengan Guncangan Layar
     countdown "10… 9… 8…" 
+
+    show nara eksplor marah:
+        xalign 1.0
+        yalign 1.6
+        zoom 0.9
+
     nara "Raka!" 
 
     countdown "7… 6…" 
@@ -111,9 +146,6 @@ label ending_chaos:
     "kota berhenti." 
 
     # KEHENINGAN SEBELUM CHAOS 
-    scene city_dark_still 
-    with fade 
-
     play music "empty_wind.ogg" 
 
     "Tidak langsung rusuh." 
@@ -125,7 +157,7 @@ label ending_chaos:
     "Karena tidak ada yang tahu harus berbuat apa." 
 
     # CHAOS DIMULAI 
-    scene city_confusion 
+    scene city_confusion #bg blum ada
     with dissolve 
 
     play sound "crowd_murmur.ogg" 
@@ -135,7 +167,7 @@ label ending_chaos:
     "Kebingungan." 
     "Lalu… ketakutan." 
 
-    scene riots 
+    scene riots #sm kayak city_confusion
     with fade 
 
     play sound "chaos.ogg" 
@@ -149,13 +181,22 @@ label ending_chaos:
     "Dan tidak ada yang siap hidup tanpa itu." 
 
     # KONFRONTASI RAKA & NARA 
-    scene fire_city 
+    scene fire_city #bg blum ada
     with dissolve 
 
     play music "burning_truth.ogg" 
 
-    show nara devastated 
-    show raka shaken 
+    show nara eksplor terkejut:
+        xalign 1.0
+        yalign 1.6
+        zoom 0.9
+    with dissolve
+    
+    show raka rebel terkejut:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
 
     nara "Lihatlah." 
     nara "Lihat apa yang lu sudah lakukan." 
@@ -164,7 +205,7 @@ label ending_chaos:
 
     "raka melihat sekitar" 
 
-    raka (dalam hati) "Ini… bukan yang gue bayangin." 
+    raka "(Ini… bukan yang gue bayangin)" 
 
     nara "Lo bilang ini kebebasan?" 
     nara "Ini bukan kebebasan, Raka." 
@@ -181,8 +222,14 @@ label ending_chaos:
     pause 
 
     # ADRIAN — DIALOG TERAKHIR 
-    scene core_ruins 
+    scene core_ruins #sama kayak core_destroy 
     with dissolve 
+
+    show adrian kantor netral: 
+        xalign 0.5
+        yalign 1.1  
+        zoom 0.85
+    with dissolve
 
     "adrian masih berdiri" 
     "di tengah kehancuran" 
@@ -191,6 +238,18 @@ label ending_chaos:
     adrian "Akhirnya kau mengerti." 
 
     pause 
+
+    show nara eksplor marah:
+        xalign 1.0
+        yalign 1.6
+        zoom 0.9
+    with dissolve
+    
+    show raka rebel marah:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
 
     "raka menatap" 
 
@@ -227,7 +286,7 @@ label ending_chaos:
     adrian "Terima kasih Raka." 
 
     # TITIK TERENDAH 
-    scene burning_streets 
+    scene burning_streets #sm kaya fire_city
     with fade 
 
     "Api menyebar." 
@@ -241,11 +300,11 @@ label ending_chaos:
     "diam" 
     "tidak bergerak" 
 
-    raka (dalam hati) "Aku… menang?" 
+    raka "(Aku… menang?)"
 
     pause 2.0
 
-    raka (dalam hati) "Atau… Aku cuma ngerusak semuanya?" 
+    raka "(Atau… Aku cuma ngerusak semuanya?)"
 
     # PENUTUP 
     scene distant_city_ruin 

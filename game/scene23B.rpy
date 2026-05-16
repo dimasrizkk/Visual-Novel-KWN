@@ -1,4 +1,4 @@
-label scene_23b_dialog_inti:
+label scene23B:
 
     nara "Lo tahu kenapa mereka takut sama kita?" 
     raka "Karena kita lawan?" 

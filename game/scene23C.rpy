@@ -1,4 +1,4 @@
-label scene_23c_keraguan:
+label scene23C:
 
     "Langkah Raka melambat sedikit." 
 

@@ -1,4 +1,4 @@
-label scene_29_core_mirror:
+label scene29_25:
 
     scene core_main 
     with fade 
@@ -11,10 +11,6 @@ label scene_29_core_mirror:
     "Hanya dingin." 
     "Rapi." 
     "Efisien." 
-    
-    scene data_streams 
-    with dissolve 
-    
     "Data mengalir." 
     "Preferensi." 
     "Kebiasaan." 
@@ -25,10 +21,24 @@ label scene_29_core_mirror:
     
     pause 
     
-    show adrian calm at center 
-    show raka at left 
-    show nara at right 
-    
+    show adrian kantor netral: 
+        xalign 0.5
+        yalign 1.1  
+        zoom 0.85
+    with dissolve
+
+    show raka rebel serius:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
+
+    show nara eksplor serius:
+        xalign 1.0
+        yalign 1.6
+        zoom 0.9
+    with dissolve
+
     adrian "Kalian terlalu lama." 
     
     pause 
@@ -48,6 +58,11 @@ label scene_29_core_mirror:
     
     "Adrian tersenyum tipis." 
     
+    show adrian kantor senyum:
+        xalign 0.5
+        yalign 1.1  
+        zoom 0.85
+
     adrian "‘Semua’ itu kata yang terlalu sederhana." 
     
     adrian "Kota ini tidak rusak." 
@@ -103,6 +118,11 @@ label scene_29_core_mirror:
     nara "Omong kosong!" 
     adrian "Aku serius, dengan pernyataanku" 
     
+    show adrian kantor serius:
+        xalign 0.5
+        yalign 1.1  
+        zoom 0.85
+
     "Adrian menatap Raka." 
     
     adrian "Aku akan memberikan kebebasan untukmu Raka, dan itukan yang kau mau?." 
@@ -127,8 +147,7 @@ label scene_29_core_mirror:
     # FINAL DECISION TREE
     if has_gun: 
         menu: 
-            "Apa yang dilakukan Raka?":
-                pass
+            "Apa yang dilakukan Raka?"
             
             "Tembak Adrian": 
                 jump ending_kill 
@@ -143,8 +162,7 @@ label scene_29_core_mirror:
 
 label decision_no_gun: 
     menu: 
-        "Apa pilihan Raka?":
-            pass
+        "Apa pilihan Raka?"            
 
         "Sebarkan semua data ke publik": 
             jump ending_true 

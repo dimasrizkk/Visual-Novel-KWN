@@ -1,9 +1,14 @@
-label scene_22d_keputusan_awal:
+label scene22D:
 
     # Mengasumsikan posisi sprite masih dari scene sebelumnya
     # Jika Raka perlu menghadap Nara (kanan), gunakan xzoom -1
-    show raka at left:
-        xzoom -1 
+    show raka rebel serius:
+        xalign 0.0
+        yalign 1.6
+        zoom 0.85
+    with dissolve
+
+    hide nara
 
     menu:
         "Apa keputusan Raka?" # Ini adalah caption menu
