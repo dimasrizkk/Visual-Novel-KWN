@@ -1,27 +1,49 @@
 label scene_21e_pengkhianatan:
-    # Logic 'else' ditangani oleh struktur menu/if di label sebelumnya
     
-    scene ministry_control_room 
-    with fade 
-    play music "betrayal_calm.ogg" 
+    # Menampilkan latar belakang ruang kontrol kementerian
+    scene ministry_control_room with fade 
     
-    "Raka berdiri di ruangan kontrol." 
-    "Monitor menampilkan lokasi Ruang Sisa." 
+    # Memutar BGM bertema pengkhianatan yang tenang namun dingin
+    play music "betrayal_calm.ogg" fadein 2.5 
     
-    adrian "Keputusan cepat." (voice_tag="offscreen")
+    "Raka berdiri terpaku di dalam ruangan kontrol kementerian yang megah." 
+    "Di hadapannya, monitor raksasa menampilkan koordinat presisi dan visual langsung dari lokasi Ruang Sisa yang sedang dikepung." 
     
-    scene adrian_shadow 
-    with dissolve 
+    # Dialog offscreen dari Adrian sebelum beralih scene
+    adrian "Keputusan cepat."
+
+    scene adrian_shadow with dissolve 
     
-    adrian "Aku menghargai itu." 
+    # Adrian muncul dengan wibawa penuh di sisi kanan layar
+    show Jas_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
+    with dissolve
     
-    raka "..." # Mengganti 'raka diam' menjadi dialog titik-titik agar alur tetap terjaga
+    adrian "Aku menghargai itu, Raka." 
     
-    adrian "Jangan khawatir." 
-    adrian "Kita tidak menghancurkan." 
-    adrian "Kita... merapikan." 
+    # Raka muncul di sisi kiri dalam posisi formal namun tertekan
+    show Formal_Serius:
+        xalign 0.15
+        yalign 1.1
+        zoom 0.85
+    with dissolve
+
+    raka "..." 
     
-    "Kata yang berbeda." 
-    "Makna yang sama."
+    show Jas_Serius:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
+
+    adrian "Jangan khawatir. Kita tidak menghancurkan tempat itu." 
+    adrian "Kita hanya... merapikan." 
+    
+    "Merapikan."
+    "Kata yang berbeda, namun di kota Nawasena ini, keduanya memiliki makna akhir yang persis sama."
+
+    # Menghentikan audio secara dramatis sebelum menutup babak
+    stop music fadeout 3.0
 
     return
