@@ -1,18 +1,16 @@
-# SCENE 21C — KONFRONTASI SEMPIT
-
 label corridor_escape:
 
-    scene bg corridor_escape
-    with dissolve
+    # Menampilkan latar belakang lorong pelarian
+    scene bg corridor_escape with dissolve
 
-    play music "tight_escape.ogg"
+    # Memutar BGM dengan nuansa kepanikan di ruang sempit
+    play music "tight_escape.ogg" fadein 1.0
 
     "Lorong sempit."
     "Lampu berkedip."
-    "Langkah kaki mendekat."
+    "Langkah kaki mendekat dari arah belakang."
 
-    nara "Kita nggak bisa lawan."
-    nara "Kita cuma bisa keluar."
+    nara "Kita nggak bisa lawan. Kita cuma bisa keluar."
 
     raka "Yang lain?"
 
@@ -20,6 +18,7 @@ label corridor_escape:
 
     "Itu jawaban yang tidak menjawab."
 
+    # SFX Suara dari radio HT milik Unit Penertiban
     play sound "voice_radio.ogg"
 
     agent "Sektor terkunci."
@@ -28,7 +27,12 @@ label corridor_escape:
 
     raka "Target?"
 
-    show nara concerned
+    # Nara muncul dengan ekspresi cemas/khawatir
+    show Eksplor_Concerned:
+        xalign 0.85
+        yalign 1.1
+        zoom 0.85
+    with dissolve
 
     nara "Kita."
 
@@ -38,16 +42,28 @@ label corridor_escape:
 
         "Bantu Nara kabur":
             $ rebellion += 2
-
-            "Ia menggenggam tangan Nara."
-            "Tidak banyak bicara."
+            
+            show Casual_Serius:
+                xalign 0.15
+                yalign 1.1
+                zoom 0.85
+            
+            "Ia menggenggam tangan Nara. Tidak banyak bicara."
             "Keputusan sudah dibuat."
 
         "Suruh Nara pergi, Raka tertinggal":
             $ sacrifice += 2
-
+            
+            show Casual_Serius:
+                xalign 0.15
+                yalign 1.1
+                zoom 0.85
             raka "Lo pergi."
 
+            show Eksplor_Concerned:
+                xalign 0.85
+                yalign 1.1
+                zoom 0.85
             nara "Jangan sok pahlawan."
 
             raka "Gue serius."
@@ -56,10 +72,17 @@ label corridor_escape:
 
         "Ragu sesaat":
             $ doubt += 2
+            
+            show Casual_Sedih:
+                xalign 0.15
+                yalign 1.1
+                zoom 0.85
+            
+            "Langkahnya melambat. Cuma satu detik."
+            "Tapi di dunia seperti ini... satu detik cukup untuk mengubah segalanya."
 
-            "Langkahnya melambat."
-            "Cuma satu detik."
-            "Tapi di dunia seperti ini..."
-            "satu detik cukup untuk mengubah segalanya."
+    # Menghentikan audio secara perlahan sebelum transisi bab berikutnya
+    stop music fadeout 2.0
+    stop sound fadeout 1.0
 
     return
