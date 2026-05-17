@@ -54,9 +54,7 @@ label scene8:
     
     "Pintu otomatis terbuka."
     "Udara kota menyambutnya dengan aroma logam basah dan parfum sintetis dari billboard jalanan."
-    
-    # Memunculkan gambar iklan hologram
-    show hologram_ads with dissolve #blom bikin overlay buat hologram ini
+
     
     system "Raka, berdasarkan pola langkahmu, kau tampak letih."
     system "Kopi spesial tersedia 40 meter di depan."
@@ -83,8 +81,6 @@ label scene8:
     system "..."
     system "Koneksi terputus."
     
-    # Menghilangkan iklan hologram
-    hide hologram_ads with dissolve
     
     "Langkah Raka terhenti."
 
