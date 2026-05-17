@@ -39,7 +39,7 @@ label scene21b:
         scene back_exit with dissolve 
 
         # Nara muncul dalam kondisi tegang/panik di posisi tengah
-        show Eksplor_Tense:
+        show Eksplor_Serius:
             xalign 0.5
             yalign 1.1
             zoom 0.85
@@ -61,7 +61,7 @@ label scene21b:
         
         "Suara keras dari atas." 
 
-        show Eksplor_Tense:
+        show Eksplor_Serius:
             xalign 0.5
             yalign 1.1
             zoom 0.85
