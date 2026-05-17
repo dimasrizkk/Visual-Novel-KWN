@@ -22,7 +22,7 @@ label ending_kill:
     scene core_silence with dissolve 
 
     # Menampilkan Nara dan Raka berdampingan di titik konfrontasi akhir
-    show Eksplor_Shocked:
+    show Eksplor_Terkejut:
         xalign 0.85
         yalign 1.1
         zoom 0.85
@@ -38,7 +38,7 @@ label ending_kill:
     pause 2.0 
 
     # Menggerakkan Nara mundur sedikit secara visual
-    show Eksplor_Shocked:
+    show Eksplor_Terkejut:
         xalign 0.90
         yalign 1.1
         zoom 0.85
@@ -48,7 +48,7 @@ label ending_kill:
 
     raka "..." 
 
-    show Eksplor_Shocked:
+    show Eksplor_Terkejut:
         xalign 0.90
         yalign 1.1
         zoom 0.85
@@ -89,7 +89,7 @@ label ending_kill:
     "Sistem tidak berhenti. Karena sistem ini dari awal tidak pernah bergantung pada nyawa satu orang." 
 
     ## ── NARA MENINGGALKAN RAKA ──
-    show Eksplor_Shocked:
+    show Eksplor_Terkejut:
         xalign 0.85
         yalign 1.1
         zoom 0.85
@@ -109,7 +109,7 @@ label ending_kill:
 
     nara "Sedangkan lu, berpura-pura suci." 
 
-    hide Eksplor_Shocked with dissolve
+    hide Eksplor_Terkejut with dissolve
     scene nara_exit with fade 
 
     "Nara pergi melangkah menjauh." 
