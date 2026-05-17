@@ -13,7 +13,7 @@ label scene21a:
     scene APARTEMEN RAKA with dissolve 
     
     # Raka muncul di tengah dengan pakaian casual dalam posisi waspada (alert)
-    show Casual_Alert:
+    show Casual_Serius:
         xalign 0.5
         yalign 1.1
         zoom 0.85
