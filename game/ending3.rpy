@@ -218,7 +218,7 @@ label ending_kill:
 
     "Raka menatap layar tersebut untuk waktu yang sangat lama." 
 
-    raka "(dalam hati) Ini mungkin salah.” 
+    raka "(dalam hati) Ini mungkin salah."
 
     pause 1.0 
 

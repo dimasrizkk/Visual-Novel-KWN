@@ -56,7 +56,7 @@ label scene21a:
 
     # Blok interaktif penentu rute jalan cerita (Pathing)
     menu: 
-        "Apa yang dilakukan Raka?": 
+        "Apa yang dilakukan Raka?"
 
         "Pergi ke Ruang Sisa": 
             $ active_path += 1 
