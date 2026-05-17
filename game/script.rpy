@@ -26,5 +26,27 @@ label start:
     call scene15
     call scene16
     call scene17
+    call scene_18a
+    call scene21a
+
+    if active_path >= 1:
+        call scene21b
+        call corridor_escape
+    elif passive_path >= 1:
+        call scene21d
+    else:
+        call scene_21e_pengkhianatan
+
+    call scene_21f_penutup_babak_2
+    call scene_22a_sunyi_yang_tidak_normal
+    call scene_22b_raka_sendiri
+    call scene22C
+    call scene22D
+    call scene23A
+    call scene23B
+    call scene23C
+    call scene24
+    call scene25
+    jump scene29_25
 
     return

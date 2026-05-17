@@ -50,6 +50,11 @@ define data_voice = Character("Data Stream", color="#00e5ff", what_italic=True)
 define countdown = Character(None, what_size=50, what_xalign=0.5, what_yalign=0.5)
 define radio = Character("Radio", color="#f7c59f", what_italic=True)
 define text_on_screen = Character(None, what_size=40, what_color="#ffffff")
+define nara_text = Character("Nara", color="#f7c59f", what_italic=True)
+define senior_analyst = Character("Senior Analyst")
+define agent = Character("Agent")
+define mother = Character("Ibu")
+define child = Character("Anak")
 
 #default loyalty   = 0
 #default awareness = 0
@@ -65,3 +70,8 @@ default ruthless = 0
 default loyalty = 0
 default awareness = 0  
 default trust_nara = 0 #variabel scene 16
+default active_path = 0
+default passive_path = 0
+default sacrifice = 0
+default has_gun = False
+default has_drive = False

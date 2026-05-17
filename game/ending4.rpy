@@ -1,3 +1,7 @@
+label ending_bad:
+label ending_sad:
+    jump ending_golden_silence
+
 label ending_golden_silence: 
 
     scene core_main with fade 

@@ -73,6 +73,7 @@ label scene_19d:
 
         "Tolak terang-terangan":
             $ loyalty += 2
+            $ has_drive = False
             show Formal_Serius:
                 xalign 0.15
                 yalign 1.1
@@ -90,6 +91,7 @@ label scene_19d:
 
         "Ambil untuk berjaga-jaga":
             $ awareness += 2
+            $ has_drive = True
             show Formal_Netral:
                 xalign 0.15
                 yalign 1.1
@@ -105,6 +107,7 @@ label scene_19d:
 
         "Terima dengan bangga":
             $ ambition += 2
+            $ has_drive = True
             show Formal_Senyum:
                 xalign 0.15
                 yalign 1.1
