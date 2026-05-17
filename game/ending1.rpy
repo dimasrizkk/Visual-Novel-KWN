@@ -11,7 +11,7 @@ label ending_true:
     system "Unit penertiban dikerahkan." 
     system "Estimasi waktu: 90 detik." 
 
-    scene core_lights_red #bg blum ada
+    scene core_lights_red 
     with dissolve 
 
     "Lampu berubah merah." 
@@ -109,7 +109,7 @@ label ending_true:
     system "30 detik menuju intervensi paksa." 
 
     # AKSI RAKA — BROADCAST 
-    scene core_overload #bg blum ada
+    scene core_overload 
     with flash 
 
     show raka rebel serius:
@@ -173,7 +173,7 @@ label ending_true:
     pause 
 
     # GUARD MASUK 
-    scene core_breach #bg blum ada
+    scene core_breach 
     with flash 
 
     show raka rebel serius:
@@ -279,7 +279,7 @@ label ending_true:
     pause 
 
     # ADRIAN (DITANGKAP) 
-    scene adrian_arrest #bg blum ada
+    scene adrian_arrest 
     with dissolve 
 
     guard "Target diamankan." 

@@ -11,7 +11,7 @@ label ending_chaos:
     system "Stabilitas jaringan menurun." 
     system "Kegagalan sistem berantai terdeteksi." 
 
-    scene core_lights_flicker #bg blum ada
+    scene core_lights_flicker
     with dissolve 
 
     "Lampu berkedip." 
@@ -71,7 +71,7 @@ label ending_chaos:
     raka "TIDAKK, gua tau dan ini sudah telat." 
 
     # AKSI — HANCURKAN CORE 
-    scene core_destroy #bg blum ada
+    scene core_destroy
     with flash 
 
     show nara eksplor serius:
@@ -157,7 +157,7 @@ label ending_chaos:
     "Karena tidak ada yang tahu harus berbuat apa." 
 
     # CHAOS DIMULAI 
-    scene city_confusion #bg blum ada
+    scene city_confusion
     with dissolve 
 
     play sound "crowd_murmur.ogg" 
@@ -181,7 +181,7 @@ label ending_chaos:
     "Dan tidak ada yang siap hidup tanpa itu." 
 
     # KONFRONTASI RAKA & NARA 
-    scene fire_city #bg blum ada
+    scene fire_city 
     with dissolve 
 
     play music "burning_truth.ogg" 
@@ -222,7 +222,7 @@ label ending_chaos:
     pause 
 
     # ADRIAN — DIALOG TERAKHIR 
-    scene core_ruins #sama kayak core_destroy 
+    scene core_ruins 
     with dissolve 
 
     show adrian kantor netral: 
@@ -286,7 +286,7 @@ label ending_chaos:
     adrian "Terima kasih Raka." 
 
     # TITIK TERENDAH 
-    scene burning_streets #sm kaya fire_city
+    scene burning_streets
     with fade 
 
     "Api menyebar." 

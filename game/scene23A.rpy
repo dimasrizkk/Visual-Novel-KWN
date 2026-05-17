@@ -1,5 +1,5 @@
 label scene23A:
-    scene underground_tunnel #bg blum ada
+    scene underground_tunnel 
     with fade 
     play music "descent.ogg" 
     

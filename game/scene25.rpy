@@ -1,6 +1,6 @@
 label scene25:
 
-    scene core_gate #bg blum ada
+    scene core_gate 
     with dissolve 
     play music "final_build.ogg" 
     

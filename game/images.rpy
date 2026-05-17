@@ -46,7 +46,6 @@ image mirror_office_morning = im.Scale("assets/background/KANTOR MIRROR (PUSAT O
 image city_night_hologram = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
 image street_modern = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
 image roadside_people = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
-image city_screens = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
 image city_wide_night = im.Scale("assets/background/city_wide_night.png", 1920, 1080)
 image city_dawn_glitch = im.Scale("assets/background/city_dawn_glitch.png", 1920, 1080)
 
@@ -115,6 +114,27 @@ image billboard = im.Scale("assets/background/billboard.png", 1920, 1080)
 image ruang_sisa_demolition = im.Scale("assets/background/ruang_sisa_demolition.png", 1920, 1080)
 image ruang_sisa_empty = im.Scale("assets/background/ruang_sisa_empty", 1920, 1080)
 image raka_reflection = im.Scale("assets/background/raka_reflection.png", 1920, 1080)
+
+image city_screens = im.Scale("assets/background/city_screens.png", 1920, 1080)
+
+image underground_tunnel = im.Scale("assets/background/underground_tunnel.jpg", 1920, 1080)
+image core_gate = im.Scale("assets/background/core_gate.jpg", 1920, 1080)
+image core_lights_red = im.Scale("assets/background/core_lightsred.jpg", 1920, 1080)
+image core_overload = im.Scale("assets/background/core_overload.jpg", 1920, 1080)
+image core_breach = im.Scale("assets/background/core_breach.jpg", 1920, 1080)
+image adrian_arrest = im.Scale("assets/background/adrian_arrest.jpg", 1920, 1080)
+image core_remains = im.Scale("assets/background/core_remains.jpg", 1920, 1080)
+image hidden_layer = im.Scale("assets/background/hidden_layer.jpg", 1920, 1080)
+image adrian_prison = im.Scale("assets/background/adriaan_prison.jpg", 1920, 1080)
+image shadow_figure = im.Scale("assets/background/shadow_figure.png", 1920, 1080)
+image core_lights_flicker = im.Scale("assets/background/core_lightflicker.jpg", 1920, 1080)
+
+image core_destroy = im.Scale("assets/background/core_destroy.jpg", 1920, 1080)
+image core_ruins = im.Scale("assets/background/core_destroy.jpg", 1920, 1080)
+
+image city_confusion = im.Scale("assets/background/city_confusion.jpg", 1920, 1080)
+image fire_city = im.Scale("assets/background/fire_city.jpg", 1920, 1080)
+image burning_streets = im.Scale("assets/background/fire_city.jpg", 1920, 1080)
 
 #adrian jas
 image adrian jas marah= "assets/character/adrian_wiratma/kostum_jas/Jas_Marah.png"

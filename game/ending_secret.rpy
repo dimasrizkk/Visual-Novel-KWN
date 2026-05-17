@@ -1,5 +1,5 @@
 label ending_secret: 
-    scene core_remains #bg blum ada
+    scene core_remains
     with fade 
 
     play music "deep_truth.ogg" 
@@ -13,10 +13,6 @@ label ending_secret:
     play sound "device_insert.ogg" 
 
     "Drive itu aktif." 
-
-    scene hidden_layer #bg blum ada
-    with dissolve 
-
     "Layer baru terbuka." 
     "Lebih tua." 
     "Lebih dalam." 
@@ -27,7 +23,7 @@ label ending_secret:
     "MIRROR bukan awal." 
     "Ia hanya kelanjutan." 
 
-    scene adrian_prison #bg blum ada
+    scene adrian_prison 
     with fade 
 
     "adrian duduk diam" 
@@ -44,16 +40,8 @@ label ending_secret:
     adrian "Satu system hancur, bukan berarti system lain tidak bisa diciptakan." 
     adrian "Menguasai pasar impor bukanlah satu-satunya tujuannya." 
 
-    scene shadow_figure #bg blum ada
+    scene shadow_figure
     with dissolve 
-
-    show official shadow : 
-        xalign 0.5
-        yalign 1.1
-        zoom 0.9
-        matrixcolor TintMatrix("#000") #ceritanya siluet gitu
-    with dissolve
-
     voice "Benar." 
 
     pause 
