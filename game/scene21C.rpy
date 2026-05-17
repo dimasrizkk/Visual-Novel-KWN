@@ -28,7 +28,7 @@ label corridor_escape:
     raka "Target?"
 
     # Nara muncul dengan ekspresi cemas/khawatir
-    show Eksplor_Concerned:
+    show Eksplor_Serius:
         xalign 0.85
         yalign 1.1
         zoom 0.85
@@ -60,7 +60,7 @@ label corridor_escape:
                 zoom 0.85
             raka "Lo pergi."
 
-            show Eksplor_Concerned:
+            show Eksplor_Serius:
                 xalign 0.85
                 yalign 1.1
                 zoom 0.85
