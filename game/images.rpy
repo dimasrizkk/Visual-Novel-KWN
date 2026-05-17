@@ -1,6 +1,8 @@
 # 1. APARTEMEN RAKA.jpg
 image apartment_dark = im.Scale("assets/background/APARTEMEN RAKA.jpg", 1920, 1080)
 image raka_apartment = im.Scale("assets/background/APARTEMEN RAKA.jpg", 1920, 1080)
+image APARTEMEN RAKA = im.Scale("assets/background/APARTEMEN RAKA.jpg", 1920, 1080)
+image raka_apartment_monitor = im.Scale("assets/background/raka_apartment_monitor.jpg", 1920, 1080)
 
 # 2. community_hub.png
 image street_people = im.Scale("assets/background/community_hub.png", 1920, 1080)
@@ -15,6 +17,7 @@ image ruang_sisa_outside = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920
 image city_night_rain = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
 image alley_entrance_far = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
 image alley_exit_night = im.Scale("assets/background/GANG TUA MALAM.jpg", 1920, 1080)
+image alley_run = im.Scale("assets/background/alley_run.png", 1920, 1080)
 
 # 5. GANG TUA PAGI.png
 image city_walk_bridge = im.Scale("assets/background/GANG TUA PAGI.png", 1920, 1080)
@@ -25,6 +28,7 @@ image adrian_prison = im.Scale("assets/background/interogation_room.png", 1920, 
 # 7. JARINGAN BAWAH TANAH 1.jpg
 image ruang_sisa_inside = im.Scale("assets/background/JARINGAN BAWAH TANAH 1.jpg", 1920, 1080)
 image ruang_sisa_inside_chaos = im.Scale("assets/background/JARINGAN BAWAH TANAH 1.jpg", 1920, 1080)
+image ruang_sisa_outside_dark = im.Scale("assets/background/ruang_sisa_outside_dark.png", 1920, 1080)
 
 # 8. JARINGAN BAWAH TANAH 2.jpg
 image underground_hub = im.Scale("assets/background/JARINGAN BAWAH TANAH 2.jpg", 1920, 1080)
@@ -43,6 +47,8 @@ image city_night_hologram = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920
 image street_modern = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
 image roadside_people = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
 image city_screens = im.Scale("assets/background/KOTA NAWASENA.jpg", 1920, 1080)
+image city_wide_night = im.Scale("assets/background/city_wide_night.png", 1920, 1080)
+image city_dawn_glitch = im.Scale("assets/background/city_dawn_glitch.png", 1920, 1080)
 
 # 12. KOTA SAAT CHAOS.jpg
 image city_chaos = im.Scale("assets/background/KOTA SAAT CHAOS.jpg", 1920, 1080)
@@ -75,6 +81,7 @@ image mural_walls = im.Scale("assets/background/mural_walls.png", 1920, 1080)
 image distribution_square = im.Scale("assets/background/distribution_square.png", 1920, 1080)
 image raka_crowd = im.Scale("assets/background/raka_crowd.png", 1920, 1080)
 image adrian_stage_close = im.Scale("assets/background/adrian_stage_close.png", 1920, 1080)
+image adrian_shadow = im.Scale("assets/background/adrian_shadow.png", 1920, 1080)
 
 image workshop_corner = im.Scale("assets/background/workshop_corner.jpg", 1920, 1080)
 image hidden_base = im.Scale("assets/background/workshop_corner.jpg", 1920, 1080)
@@ -88,6 +95,26 @@ image coffee_manual = im.Scale("assets/background/coffee_manual.jpg", 1920, 1080
 image workshop_tension = im.Scale("assets/background/workshop_tension.jpg", 1920, 1080)
 
 image kota_good_ending = im.Scale("assets/background/NAWASENA GOOD ENDING (GAMBAR 1).jpg", 1920, 1080)
+
+image back_exit = im.Scale("assets/background/back_exit.png", 1920, 1080)
+image corridor_escape = im.Scale("assets/background/corridor_escape.png", 1920, 1080)
+image billboard_glitch = im.Scale("assets/background/billboard_glitch.png", 1920, 1080)
+image raka_walk_morning = im.Scale("assets/background/raka_walk_morning.png", 1920, 1080)
+image adrian_fall = im.Scale("assets/background/adrian_fall.png", 1920, 1080)
+image core_silence = im.Scale("assets/background/core_silence.png", 1920, 1080)
+image nara_exit = im.Scale("assets/background/nara_exit.png", 1920, 1080)
+image core_breach = im.Scale("assets/background/core_breach.png", 1920, 1080)
+image city_ordered_again = im.Scale("assets/background/city_ordered_again.png", 1920, 1080)
+image screen_close = im.Scale("assets/background/screen_closed.png", 1920, 1080)
+image raka_shadow = im.Scale("assets/background/raka_shadow.png", 1920, 1080)
+image guard_enter = im.Scale("assets/background/guard_enter.png", 1920, 1080)
+image nara_taken = im.Scale("assets/background/nara_taken.png", 1920, 1080)
+image city_perfect = im.Scale("assets/background/city_perfect.png", 1920, 1080)
+image elite_office = im.Scale("assets/background/elite_office.png", 1920, 1080)
+image billboard = im.Scale("assets/background/billboard.png", 1920, 1080)
+image ruang_sisa_demolition = im.Scale("assets/background/ruang_sisa_demolition.png", 1920, 1080)
+image ruang_sisa_empty = im.Scale("assets/background/ruang_sisa_empty", 1920, 1080)
+image raka_reflection = im.Scale("assets/background/raka_reflection.png", 1920, 1080)
 
 #adrian jas
 image adrian jas marah= "assets/character/adrian_wiratma/kostum_jas/Jas_Marah.png"
@@ -146,6 +173,7 @@ image raka casual sedih= "assets/character/raka_pradana/kostum_casual/Casual_Sed
 image raka casual senyum= "assets/character/raka_pradana/kostum_casual/Casual_Senyum.png"
 image raka casual serius= "assets/character/raka_pradana/kostum_casual/Casual_Serius.png"
 image raka casual terkejut= "assets/character/raka_pradana/kostum_casual/Casual_Terkejut.png"
+image raka casual holdinggun= "assets/character/raka_pradana/kostum_casual/Casual_HoldingGun.png"
 
 #raka formal
 image raka formal marah= "assets/character/raka_pradana/kostum_formal/Formal_Marah.png"
@@ -155,6 +183,7 @@ image raka formal senyum= "assets/character/raka_pradana/kostum_formal/Formal_Se
 image raka formal serius= "assets/character/raka_pradana/kostum_formal/Formal_Serius.png"
 image raka formal terkejut= "assets/character/raka_pradana/kostum_formal/Formal_Terkejut.png"
 image raka formal tired= "assets/character/raka_pradana/kostum_formal/Formal_Tired.png"
+image raka formal menteri= "assets/character/raka_pradana/kostum_formal/Formal_Menteri.png"
 
 #raka rebel
 image raka rebel marah= "assets/character/raka_pradana/kostum_rebel/Rebel_Marah.png"
